@@ -1555,12 +1555,12 @@
 	{
 		"name": "Giant Death Robot",
 		"unitType": "Armored",
-		"movement": 5,
+		"movement": 2,
 		"strength": 150,
 		"cost": 425,
 		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"requiredResource": ["Uranium","Aluminum"[2]],
+		"uniques": ["Can move after attacking", "No defensive terrain bonus"],
 		"attackSound": "gdrAttack"
 	},
 	{
@@ -1573,7 +1573,7 @@
 		"cost": 425,
 		"requiredTech": "Stealth",
 		"requiredResource": "Aluminum",
-		"uniques": ["Damage taken from interception reduced by [100]%", "Cannot be carried by [Carrier] units", "[+4] Sight", "Can see over obstacles"],
+		"uniques": ["Damage taken from interception reduced by [50]%", "Cannot be carried by [Carrier] units", "[+4] Sight", "Can see over obstacles"],
 		"attackSound": "bombing"
 	},
 
