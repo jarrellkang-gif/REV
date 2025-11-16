@@ -1210,9 +1210,10 @@
 		"range": 2,
 		"movement": 2,
 		"strength": 550,
-		"cost": 0,
+		"requiredResource": "Oil",
+		"cost": 675,
 		"requiredTech": "Electronics",
-		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units","Consumes [2] Oil","Consumes [1] Iron"]
+		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units"]
 	},
 	{
 		"name": "Battleship",
@@ -1221,10 +1222,9 @@
 		"strength": 400,
 		"rangedStrength": 400,
 		"range": 2,
-		"cost": 675,
-		"requiredResource": "Oil",
+		"cost": 0,
 		"requiredTech": "Electronics",
-		"uniques": ["Never appears as a Barbarian unit"],
+		"uniques": ["Never appears as a Barbarian unit","Consumes [2] Oil","Consumes [1] Iron"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 		// Does not actually upgrade to Missile Cruisers
