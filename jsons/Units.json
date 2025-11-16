@@ -1201,7 +1201,6 @@
 		"strength": 70,
 		"cost": 200,
 		"requiredTech": "Plastics",
-		"obsoleteTech": "Mobile Tactics",
 		"attackSound": "shot"
 	},
 	{
@@ -1212,7 +1211,7 @@
 		"movement": 2,
 		"strength": 550,
 		"cost": 675,
-		"requiredResource": "Oil",
+		"requiredResource": ["Oil","Uranium"],
 		"requiredTech": "Electronics",
 		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units"]
 	},
@@ -1638,7 +1637,7 @@
 		"name": "Great General",
 		"unitType": "Civilian",
 		"uniques": [
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "[+50]% Strength bonus for [Military] units within [3] tiles",
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Can be earned through combat <for [Land] units>",
             "Is part of Great Person group [General]",
@@ -1652,7 +1651,7 @@
 		"uniqueTo": "Mongolia",
 		"replaces": "Great General",
 		"uniques": [
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "[+70]% Strength bonus for [Military] units within [3] tiles",
 			"All adjacent units heal [+15] HP when healing", "[+15] HP when healing",
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Can be earned through combat <for [Land] units>",
