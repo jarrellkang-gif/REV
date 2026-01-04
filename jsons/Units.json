@@ -15,7 +15,7 @@
 		"name": "Settler",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 106,
+		"cost": 100,
 		"requiredTech": "Agriculture",
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
 			"Requires at least [2] population"],
@@ -26,22 +26,19 @@
 		"name": "Work Boats",
 		"unitType": "Civilian Water",
 		"movement": 4,
-		"cost": 30,
+		"cost": 40,
 		"requiredTech": "Sailing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources",
             "Uncapturable", "Automation is a primary action"]
 	},
-
-
-	
 	{
 		"name": "Scout",
 		"unitType": "Scout",
-		"movement": 2,
+		"movement": 4,
 		"strength": 5,
 		"cost": 25,
 		"requiredTech": "Agriculture",
-		"promotions": ["Ignore terrain cost"],
+		"promotions": ["[3] Sight"],
 		"attackSound": "nonmetalhit"
 	},
 
@@ -50,7 +47,7 @@
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 8,
-		"cost": 40,
+		"cost": 100,
 		"requiredTech": "Agriculture",
 		"obsoleteTech": "Metal Casting",
 		"attackSound": "nonmetalhit",
@@ -66,9 +63,8 @@
 		"replaces": "Warrior",
 		"movement": 2,
 		"strength": 8,
-		"cost": 20,
-		"obsoleteTech": "Metal Casting",
-		"upgradesTo": "Swordsman",
+		"cost": 150,
+		"obsoleteTech": "Agriculture",
 		"attackSound": "nonmetalhit"
 	},
 
@@ -102,7 +98,6 @@
 	{
 		"name": "Quinquereme",
 		"unitType": "Melee Water",
-		"uniqueTo": "Carthage",
 		"replaces": "Trireme",
 		"movement": 4,
 		"strength": 13,
@@ -147,7 +142,7 @@
 		"rangedStrength": 10,
 		"cost": 56,
 		"requiredTech": "The Wheel",
-		"uniques": ["No defensive terrain bonus", "Rough terrain penalty"],
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty",[],
 		"attackSound": "arrow"
 	},
 	{
@@ -200,30 +195,6 @@
 		"[-1] Sight", "Can only attack [City] units"],
 		"attackSound": "throw"
 	},
-
-	{
-		"name": "Marauder",
-		"unitType": "Sword",
-		"replaces": "Spearman",
-		"uniqueTo": "Barbarians",
-		"movement": 2,
-		"strength": 10,
-		"cost": 56,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
-		"upgradesTo": "Pikeman",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
-		"attackSound": "metalhit"
-	},
-
-
-
-
-
-
-
-
-
 
 
 	/* Classical Era */
