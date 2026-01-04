@@ -124,7 +124,7 @@
 
 	{
 		"name": "Chariot Archer",
-		"unitType": "Archer",
+		"unitType": "Archery",
 		"movement": 4,
 		"strength": 2,
 		"rangedStrength": 10,
@@ -147,7 +147,7 @@
 	},
 	{
 		"name": "Horse Archer",
-		"unitType": "Archer",,
+		"unitType": "Archery",
 		"movement": 4,
 		"strength": 7,
 		"rangedStrength": 10,
