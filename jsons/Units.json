@@ -577,13 +577,59 @@
 	
 
 	// Modern era
-
+	
 	{
 		"name": "Rifleman",
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 50,
 		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Guerilla",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 50,
+		"cost": 0,
+		"uniqueTo": "Barbarians",
+		"uniques": ["Withdraws before melee combat",
+					"Invisible to non-adjacent units",
+					"No movement cost to pillage",
+					"[+50]% Health from pillaging tiles",
+					"Heals [3] damage if it kills a unit",
+					"Unit will heal every turn, even if it performs an action",
+					"[-70]% Strength <when attacking>",
+					"May capture killed [Wounded] units",
+					"[+100]% XP gained from combat",
+					"Ignores Zone of Control",
+					"[+20]% Strength bonus for [Friendly] units within [2] tiles"]
+		"requiredTech": "Replaceable Parts",
+		"attackSound": "shot"
+	},
+	
+	{
+		"name": "Local Rebels",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 50,
+		"cost": 0,
+		"uniqueTo": "Barbarians",
+		"uniques": ["Withdraws before melee combat",
+					"Invisible to non-adjacent units",
+					"No movement cost to pillage",
+					"[+50]% Health from pillaging tiles",
+					"Heals [110] damage if it kills a unit",
+					"Unit will heal every turn, even if it performs an action",
+					"[-70]% Strength <when attacking>",
+					"[+150]% Strength <when attacking>",",
+					"May capture killed [Wounded] units",
+					"[+100]% XP gained from combat",
+					"[+40]% Strength bonus for [Friendly] units within [2] tiles",
+					"Cannot move"]
 		"requiredTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
