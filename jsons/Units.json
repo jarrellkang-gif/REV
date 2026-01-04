@@ -62,7 +62,8 @@
 		"movement": 2,
 		"strength": 8,
 		"cost": 150,
-		"obsoleteTech": "Agriculture",
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Metal Casting",
 		"attackSound": "nonmetalhit"
 	},
 
@@ -136,6 +137,7 @@
 		"rangedStrength": 10,
 		"cost": 56,
 		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
 		"uniques": ["No defensive terrain bonus", "Rough terrain penalty","[+50]% Strength <vs [Wounded] units> <when attacking>"],
 		"attackSound": "arrow"
 	},
@@ -145,7 +147,7 @@
 		"movement": 4,
 		"strength": 7,
 		"rangedStrength": 10,
-		"cost": 56,
+		"cost": 400,
 		"uniques": ["No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
@@ -155,9 +157,10 @@
 		"movement": 3,
 		"strength": 9,
 		"rangedStrength": 11,
-		"cost": 70,
+		"cost": 500,
 		"requiredTech": "The Wheel",
-		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90% Strength <when defending>"],
+		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90% Strength <when defending>",
+		,"[+200]% maintenance costs"],
 		"attackSound": "elephant"
 	},
 	{
@@ -213,7 +216,6 @@
 		"attackSound": "horse"
 	},
 
-	
 	{
 		"name": "Ballista",
 		"unitType": "Siege",
@@ -259,9 +261,6 @@
 	},
 
 
-
-	
-
 	// Medieval Era
 	{
 		"name": "Pikeman",
@@ -270,26 +269,13 @@
 		"strength": 16,
 		"cost": 90,
 		"requiredTech": "Civil Service",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
 		"upgradesTo": "Lancer",
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
 	},
-	{
-		"name": "Landsknecht",
-		"unitType": "Sword",
-		"replaces": "Pikeman",
-		"uniqueTo": "Germany",
-		"movement": 2,
-		"strength": 16,
-		"cost": 45,
-		"requiredTech": "Civil Service",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>", "Can move immediately once bought" ],
-		"upgradesTo": "Lancer",
-		"obsoleteTech": "Metallurgy",
-		"attackSound": "metalhit"
-		//"Requires [Mercenary Army]" in BNW
-	},
+
+	
 	{
 		"name": "Galleass",
 		"unitType": "Ranged Water",
@@ -308,97 +294,27 @@
 		"unitType": "Mounted",
 		"movement": 4,
 		"strength": 20,
-		"cost": 120,
+		"cost": 600,
 		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry",
 		"requiredResource": "Horses",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
 		"attackSound": "horse"
 	},
-	{
-		"name": "Camel Archer",
-		"unitType": "Archery",
-		"replaces": "Knight",
-		"uniqueTo": "Arabia",
-		"movement": 4,
-		"strength": 17,
-		"rangedStrength": 21,
-		"cost": 120,
-		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
-		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
-		"uniques": ["Can move after attacking","No defensive terrain bonus"],
-		"attackSound": "arrow"
-		//Camel Archer should have no penalty attacking cities
-	},
+	
 	{
 		"name": "Conquistador",
 		"unitType": "Mounted",
-		"replaces": "Knight",
-		"uniqueTo": "Spain",
 		"movement": 4,
 		"strength": 20,
 		"cost": 135,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
-		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Founds a new city <on foreign continents>", "[+2] Sight"],
-		"promotions": ["[Conquistador] ability"],
+		"uniques": ["Founds a new city <on foreign continents>", "[+2] Sight"],,
 		"attackSound": "horse"
 		//Conquistador should have no penalty attacking cities
 		//Ability to found new cities can only be used on a foreign continent that does not contain the Spanish capital.
 	},
-	{
-		"name": "Naresuan's Elephant",
-		"unitType": "Mounted",
-		"replaces": "Knight",
-		"uniqueTo": "Siam",
-		"movement": 3,
-		"strength": 25,
-		"cost": 120,
-		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[+50]% Strength <vs [Mounted] units>","[-33]% Strength <vs cities> <when attacking>"],
-		"attackSound": "elephant"
-	},
-	{
-		"name": "Mandekalu Cavalry",
-		"unitType": "Mounted",
-		"replaces": "Knight",
-		"uniqueTo": "Songhai",
-		"movement": 4,
-		"strength": 20,
-		"cost": 110,
-		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
-		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
-		"uniques": ["Can move after attacking","No defensive terrain bonus"],
-		"attackSound": "horse"
-	},
-	{
-		"name": "Keshik",
-		"unitType": "Archery",
-		"replaces": "Knight",
-		"uniqueTo": "Mongolia",
-		"range": 2,
-		"movement": 5,
-		"strength": 15,
-		"rangedStrength": 16,
-		"cost": 120,
-		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
-		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
-		"uniques": ["Can move after attacking","No defensive terrain bonus"],
-		"promotions": ["Great Generals I", "Quick Study"],
-		"attackSound": "arrow"
-		// Keshik should have no penalty attacking cities
-	},
+
 	{
 		"name": "Crossbowman",
 		"unitType": "Archery",
@@ -407,25 +323,11 @@
 		"rangedStrength": 18,
 		"cost": 120,
 		"requiredTech": "Machinery",
-		"upgradesTo": "Gatling Gun",
 		"obsoleteTech": "Industrialization",
 		"attackSound": "crossbow"
 	},
-	{
-		"name": "Chu-Ko-Nu",
-		"unitType": "Archery",
-		"uniqueTo": "China",
-		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 14,
-		"replaces": "Crossbowman",
-		"cost": 120,
-		"requiredTech": "Machinery",
-		"upgradesTo": "Gatling Gun",
-		"obsoleteTech": "Industrialization",
-		"promotions": ["[Chu-Ko-Nu] ability"],
-		"attackSound": "crossbow"
-	},
+
+	//Longbowman takes even longer to make than archers, and welp, not mounted
 	{
 		"name": "Longbowman",
 		"unitType": "Archery",
@@ -455,66 +357,7 @@
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
 		"attackSound": "throw"
 	},
-	{
-		"name": "Hwach'a",
-		"unitType": "Siege",
-		"replaces": "Trebuchet",
-		"uniqueTo": "Korea",
-		"movement": 2,
-		"strength": 11,
-		"rangedStrength": 26,
-		"cost": 120,
-		"requiredTech": "Physics",
-		"obsoleteTech": "Chemistry",
-		"upgradesTo": "Cannon",
-		"uniques": ["No defensive terrain bonus","Must set up to ranged attack"],
-		"attackSound": "throw"
-	},
-	{
-		"name": "Longswordsman",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 21,
-		"cost": 120,
-		"requiredTech": "Steel",
-		"upgradesTo": "Musketman",
-		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Samurai",
-		"unitType": "Sword",
-		"replaces": "Longswordsman",
-		"uniqueTo": "Japan",
-		"movement": 2,
-		"strength": 21,
-		"cost": 120,
-		"requiredTech": "Steel",
-		"upgradesTo": "Musketman",
-		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
-		"promotions": ["Shock I", "Great Generals II"],
-		"uniques": ["Can instantly construct a [Fishing Boats] improvement"],
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Berserker",
-		"unitType": "Sword",
-		"replaces": "Longswordsman",
-		"uniqueTo": "Denmark",
-		"movement": 3,
-		"strength": 21,
-		"cost": 120,
-		"requiredTech": "Metal Casting",
-		"upgradesTo": "Musketman",
-		"obsoleteTech": "Metallurgy",
-		"requiredResource": "Iron",
-		"promotions": ["Amphibious"],
-		"hurryCostModifier": 20,
-		"attackSound": "metalhit"
-		//Danish unique unit. Can attack from the sea without any penalty, and moves faster.
-	},
+	
 
 	// Rennaisance Era
 
@@ -534,8 +377,6 @@
 	{
 		"name": "Turtle Ship",
 		"unitType": "Melee Water",
-		"replaces": "Caravel",
-		"uniqueTo": "Korea",
 		"movement": 4,
 		"strength": 36,
 		"cost": 120,
@@ -547,70 +388,14 @@
 		"attackSound": "cannon"
 	},
 	{
-		"name": "Musketman",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 24,
-		"cost": 150,
-		"requiredTech": "Gunpowder",
-		"upgradesTo": "Rifleman",
-		"obsoleteTech": "Rifling",
-		"attackSound": "shot"
-	},
-	{
 		"name": "Musketeer",
 		"unitType": "Gunpowder",
-		"replaces": "Musketman",
-		"uniqueTo": "France",
 		"movement": 2,
 		"strength": 28,
 		"cost": 150,
 		"requiredTech": "Gunpowder",
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
-		"attackSound": "shot"
-	},
-	{
-		"name": "Janissary",
-		"unitType": "Gunpowder",
-		"replaces": "Musketman",
-		"uniqueTo": "The Ottomans",
-		"movement": 2,
-		"strength": 24,
-		"cost": 150,
-		"requiredTech": "Gunpowder",
-		"upgradesTo": "Rifleman",
-		"obsoleteTech": "Rifling",
-		"promotions": ["[Janissary] ability"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Minuteman",
-		"unitType": "Gunpowder",
-		"replaces": "Musketman",
-		"uniqueTo": "America",
-		"movement": 2,
-		"strength": 24,
-		"cost": 150,
-		"requiredTech": "Gunpowder",
-		"upgradesTo": "Rifleman",
-		"obsoleteTech": "Rifling",
-		"uniques": ["Ignores terrain cost"],
-		"promotions": ["Drill I"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Tercio",
-		"unitType": "Gunpowder",
-		"replaces": "Musketman",
-		"uniqueTo": "Spain",
-		"movement": 2,
-		"strength": 26,
-		"cost": 160,
-		"requiredTech": "Gunpowder",
-		"upgradesTo": "Rifleman",
-		"obsoleteTech": "Rifling",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
 		"attackSound": "shot"
 	},
 	{
@@ -622,19 +407,6 @@
 		"requiredTech": "Navigation",
 		"upgradesTo": "Destroyer",
 		"promotions": ["Coastal Raider I", "[Privateer] ability"],
-		"attackSound": "cannon"
-	},
-	{
-		"name": "Sea Beggar",
-		"unitType": "Melee Water",
-		"replaces": "Privateer",
-		"uniqueTo": "The Netherlands",
-		"movement": 5,
-		"strength": 25,
-		"cost": 150,
-		"requiredTech": "Navigation",
-		"upgradesTo": "Destroyer",
-		"promotions": ["Coastal Raider I", "Coastal Raider II", "Supply", "[Privateer] ability"],
 		"attackSound": "cannon"
 	},
 	{
@@ -654,8 +426,6 @@
 	{
 		"name": "Ship of the Line",
 		"unitType": "Ranged Water",
-		"replaces": "Frigate",
-		"uniqueTo": "England",
 		"movement": 5,
 		"strength": 30,
 		"rangedStrength": 35,
@@ -700,22 +470,6 @@
 		"attackSound": "horse"
 	},
 	{
-		"name": "Hakkapeliitta",
-		"unitType": "Mounted",
-		"replaces": "Lancer",
-		"uniqueTo": "Sweden",
-		"movement": 4,
-		"strength": 25,
-		"cost": 185,
-		"requiredTech": "Metallurgy",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
-		"promotions": ["[Hakkapeliitta] ability","Formation I"],
-		"upgradesTo": "Anti-Tank Gun",
-		"obsoleteTech": "Combined Arms",
-		"attackSound": "horse"
-	},
-	{
 		"name": "Cannon",
 		"unitType": "Siege",
 		"movement": 2,
@@ -732,117 +486,73 @@
 	// Industrial Era
 
 	{
-		"name": "Gatling Gun",
-		"unitType": "Ranged Gunpowder",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 30,
-		"cost": 225,
-		"requiredTech": "Industrialization",
-		"upgradesTo": "Machine Gun",
-		"obsoleteTech": "Ballistics",
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Rifleman",
+		"name": "Line Infantry",
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 34,
 		"cost": 225,
-		"requiredTech": "Rifling",
+		"requiredTech": "Economics",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Great War Infantry",
 		"attackSound": "shot"
 	},
+	
 	{
-		"name": "Norwegian Ski Infantry",
-		"unitType": "Gunpowder",
-		"replaces": "Rifleman",
-		"uniqueTo": "Denmark",
-		"movement": 2,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"promotions": ["[Norwegian Ski Infantry] ability"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Carolean",
-		"unitType": "Gunpowder",
-		"replaces": "Rifleman",
-		"uniqueTo": "Sweden",
-		"movement": 2,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"promotions": ["March"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Mehal Sefari",
-		"unitType": "Gunpowder",
-		"replaces": "Rifleman",
-		"uniqueTo": "Ethiopia",
-		"movement": 2,
-		"strength": 34,
-		"cost": 200,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"promotions": ["Drill I","Home Sweet Home"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Cavalry",
+		"name": "Light Cavalry",
 		"unitType": "Mounted",
 		"movement": 4,
 		"strength": 34,
 		"cost": 225,
-		"requiredTech": "Military Science",
+		"requiredTech": "Economics",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
-		"attackSound": "cavalry"
-	},
-	{
-		"name": "Cossack",
-		"unitType": "Mounted",
-		"replaces": "Cavalry",
-		"uniqueTo": "Russia",
-		"movement": 4,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
-		"promotions": ["[Cossack] ability"],
 		"attackSound": "cavalry"
 	},
+
 	{
-		"name": "Hussar",
+		"name": "Cuirassiers",
 		"unitType": "Mounted",
-		"replaces": "Cavalry",
-		"uniqueTo": "Austria",
-		"movement": 5,
+		"movement": 4,
 		"strength": 34,
 		"cost": 225,
-		"requiredTech": "Military Science",
+		"requiredTech": "Metallurgy",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>",
-			"[+1] Sight"],
-		"promotions": ["[Hussar] ability"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
 		"attackSound": "cavalry"
 	},
+
+	{
+		"name": "Light Field Gun",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 21,
+		"rangedStrength": 28,
+		"range": 3,
+		"cost": 320,
+		"requiredTech": "Chemistry",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+
+	{
+		"name": "Heavy Field Gun",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 21,
+		"rangedStrength": 28,
+		"range": 3,
+		"cost": 320,
+		"requiredTech": "Chemistry",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	}
+
 	{
 		"name": "Ironclad",
 		"unitType": "Melee Water",
@@ -856,24 +566,34 @@
 		"uniques": ["[+33]% Strength <vs cities>","Double movement in [Coast]", "Never appears as a Barbarian unit"],
 		"attackSound": "shipguns"
 	},
-	{
-		"name": "Artillery",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 21,
-		"rangedStrength": 28,
-		"range": 3,
-		"cost": 320,
-		"requiredTech": "Dynamite",
-		"upgradesTo": "Rocket Artillery",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
-		"promotions": ["Indirect Fire"],
-		"attackSound": "artillery"
-	},
+	
 
 	// Modern era
 
+	{
+		"name": "Rifleman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Landship",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	
 	{
 		"name": "Submarine",
 		"unitType": "Submarine",
@@ -886,31 +606,8 @@
 		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit"],
 		"attackSound": "torpedo"
 	},
-	{
-		"name": "Great War Infantry",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 50,
-		"cost": 320,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Infantry",
-		"obsoleteTech": "Plastics",
-		"attackSound": "shot"
-	},
-	{
-		"name": "Foreign Legion",
-		"unitType": "Gunpowder",
-		"replaces": "Great War Infantry",
-		"uniqueTo": "France",
-		"movement": 2,
-		"strength": 50,
-		"cost": 320,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Infantry",
-		"obsoleteTech": "Plastics",
-		"uniques": ["[+20]% Strength <when fighting in [Foreign Land] tiles>"],
-		"attackSound": "shot"
-	},
+	
+	
 	{
 		"name": "Triplane",
 		"unitType": "Fighter",
@@ -927,6 +624,7 @@
 		"uniques": ["[50]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "machinegun"
 	},
+	
 	{
 		"name": "Great War Bomber",
 		"unitType": "Bomber",
@@ -941,17 +639,7 @@
 		"obsoleteTech": "Radar",
 		"attackSound": "bombing"
 	},
-	{
-		"name": "Infantry",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 70,
-		"cost": 375,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
+	
 	{
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
@@ -976,19 +664,7 @@
 		"attackSound": "shipguns"
 		// Does not actually upgrade to Missile Cruisers
 	},
-	{
-		"name": "Machine Gun",
-		"unitType": "Ranged Gunpowder",
-		"range": 1,
-		"movement": 2,
-		"strength": 60,
-		"rangedStrength": 60,
-		"cost": 350,
-		"requiredTech": "Ballistics",
-		"upgradesTo": "Mechanized Infantry",
-		"attackSound": "machinegun"
-		// Upgrades to Bazooka in BNW
-	},
+
 	{
 		"name": "Anti-Aircraft Gun",
 		"unitType": "Gunpowder",
@@ -1002,19 +678,7 @@
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>", "[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
-	{
-		"name": "Landship",
-		"unitType": "Armored",
-		"movement": 4,
-		"strength": 60,
-		"cost": 350,
-		"requiredTech": "Combustion",
-		"requiredResource": "Oil",
-		"upgradesTo": "Tank",
-		"obsoleteTech": "Combined Arms",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
+	
 	{
 		"name": "Destroyer",
 		"unitType": "Melee Water",
@@ -1028,8 +692,52 @@
 		"attackSound": "shipguns"
 	},
 
-	// Atomic Era
 
+
+
+
+
+
+
+
+	
+	// Atomic Era
+	{
+		"name": "Light Tank",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Medium Tank",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+
+	{
+		"name": "Heavy Tank",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+
+	
 	{
 		"name": "Marine",
 		"unitType": "Gunpowder",
@@ -1056,23 +764,7 @@
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "machinegun"
 	},
-	{
-		"name": "Zero",
-		"unitType": "Fighter",
-		"replaces": "Fighter",
-		"uniqueTo": "Japan",
-		"movement": 1,
-		"strength": 45,
-		"rangedStrength": 45,
-		"range": 8,
-		"interceptRange": 8,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
-		"promotions": ["[Zero] ability"],
-		"attackSound": "machinegun"
-	},
+	
 	{
 		"name": "Bomber",
 		"unitType": "Bomber",
@@ -1086,22 +778,7 @@
 		"upgradesTo": "Stealth Bomber",
 		"attackSound": "bombing"
 	},
-	{
-		"name": "B17",
-		"unitType": "Bomber",
-		"replaces": "Bomber",
-		"uniqueTo": "America",
-		"movement": 1,
-		"strength": 70,
-		"rangedStrength": 70,
-		"range": 10,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"promotions": ["Evasion", "Siege I"],
-		"upgradesTo": "Stealth Bomber",
-		"attackSound": "bombing"
-	},
+	
 	{
 		"name": "Paratrooper",
 		"unitType": "Gunpowder",
@@ -1109,37 +786,12 @@
 		"strength": 65,
 		"cost": 375,
 		"requiredTech": "Radar",
-		"uniques": ["May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit"],
+		"uniques": ["May Paradrop to [Land] tiles up to [20] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit",
+			"No Movement Cost to Pillage"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
-	{
-		"name": "Tank",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 70,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
-		"name": "Panzer",
-		"unitType": "Armored",
-		"uniqueTo": "Germany",
-		"replaces": "Tank",
-		"movement": 6,
-		"strength": 80,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking","No defensive terrain bonus"],
-		"attackSound": "tankshot"
-		//German unique unit, stronger than Tank
-	},
+
 	{
 		"name": "Anti-Tank Gun",
 		"unitType": "Gunpowder",
@@ -1151,6 +803,7 @@
 		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
+
 	{
 		"name": "Atomic Bomb",
 		"unitType": "Atomic Bomber",
@@ -1166,7 +819,8 @@
 			"Blast radius [2]"],
 		"attackSound": "nuke"
 		// Plane rather than a missile - can be based in city or Carrier only.
-		// Can be intercepted, but must die for it not to take effect.
+		// Can be intercepted, but must die for it not to take effect
+		//broh make it so that atomic bombs take more damage when intercepting, same for bombers??
 	},
 	{
 		"name": "Rocket Artillery",
@@ -1219,6 +873,7 @@
 		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [2]", "Consumes [2] [Uranium]"],
 		"attackSound": "nuke"
+		//jackpot nuclear missile consumes 2 uranium hahahahahha
 	},
 	{
 		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
@@ -1274,15 +929,14 @@
 		"attackSound": "shipguns"
 	},
 	{
-		"name": "Modern Armor",
+		"name": "Main Battle Tank",
 		"unitType": "Armored",
 		"movement": 5,
 		"strength": 100,
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		"upgradesTo": "Giant Death Robot",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -1300,17 +954,6 @@
 		"attackSound": "jetgun"
 	},
 	{
-		"name": "Giant Death Robot",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 150,
-		"cost": 425,
-		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "gdrAttack"
-	},
-	{
 		"name": "Stealth Bomber",
 		"unitType": "Bomber",
 		"movement": 2,
@@ -1323,6 +966,23 @@
 		"uniques": ["Damage taken from interception reduced by [100]%", "Cannot be carried by [Carrier] units", "[+4] Sight", "Can see over obstacles"],
 		"attackSound": "bombing"
 	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/* Great people */
 
