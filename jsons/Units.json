@@ -151,17 +151,16 @@
 		"uniques": ["No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
+
+
 	{
 		"name": "War Elephant",
 		"unitType": "Mounted",
-		"movement": 3,
-		"strength": 9,
-		"rangedStrength": 11,
-		"cost": 500,
-		"requiredTech": "The Wheel",
-		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90]% Strength <when defending>",
-		"[+200]% maintenance costs"],
-		"attackSound": "elephant"
+		"movement": 4,
+		"strength": 7,
+		"cost": 400,
+		"uniques": ["No defensive terrain bonus"],
+		"attackSound": "arrow"
 	},
 	
 	{
