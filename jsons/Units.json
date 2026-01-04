@@ -44,14 +44,17 @@
 		]
 	},
 	{
-		"name": "Heavy Warrior",
+		"name": "Brute Warrior",
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 8,
 		"cost": 20,
 		"upgradesTo": "Heavy Infantry",
 		"uniques": ["Rough terrain penalty"],
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
+		"civilopediaText": [
+			{"text": "This is your ancient big and mean warrior"}
+		]
 	},
 	{
 		"name": "Archer",
@@ -150,11 +153,28 @@
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Horses",
 		"upgradesTo": "Light Cavalry",
-		"uniques": ["Can move after attacking","[-90]% Strength <vs cities> <when attacking>"],
+		"uniques": ["[-90]% Strength <vs cities> <when attacking>"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse",
 		"civilopediaText": [
 			{"text": "Best for flanking, scouting, fighting skirmishers, or pursuit. Do not use for charging heavy lines"}
+		]
+	},
+
+	{
+		"name": "Heavy Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 12,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Heavy Cavalry",
+		"uniques": ["[-90]% Strength <vs cities> <when attacking>"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse",
+		"civilopediaText": [
+			{"text": "Use for charging heavy lines"}
 		]
 	},
 
@@ -261,9 +281,6 @@
 
 
 
-
-
-
 	// Medieval Era
 	{
 		"name": "Pikeman",
@@ -342,9 +359,7 @@
 		"rangedStrength": 18,
 		"cost": 120,
 		"requiredTech": "Machinery",
-		"upgradesTo": "Gatling Gun",
 		"obsoleteTech": "Industrialization",
-		"promotions": ["Extended Range"],
 		"attackSound": "arrow"
 	},
 
@@ -378,6 +393,10 @@
 		"uniques": ["No defensive terrain bonus","Must set up to ranged attack"],
 		"attackSound": "throw"
 	},
+
+
+
+
 
 
 	// Rennaisance Era
@@ -553,20 +572,6 @@
 		"attackSound": "shot"
 	},
 	{
-		"name": "Mehal Sefari",
-		"unitType": "Gunpowder",
-		"replaces": "Rifleman",
-		"uniqueTo": "Ethiopia",
-		"movement": 2,
-		"strength": 34,
-		"cost": 200,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"promotions": ["Drill I","Home Sweet Home"],
-		"attackSound": "shot"
-	},
-	{
 		"name": "Cavalry",
 		"unitType": "Mounted",
 		"movement": 4,
@@ -579,39 +584,7 @@
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
 		"attackSound": "horse"
 	},
-	{
-		"name": "Cossack",
-		"unitType": "Mounted",
-		"replaces": "Cavalry",
-		"uniqueTo": "Russia",
-		"movement": 4,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
-		"promotions": ["[Cossack] ability"],
-		"attackSound": "horse"
-	},
-	{
-		"name": "Hussar",
-		"unitType": "Mounted",
-		"replaces": "Cavalry",
-		"uniqueTo": "Austria",
-		"movement": 5,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>",
-			"[+1] Sight"],
-		"promotions": ["[Hussar] ability"],
-		"attackSound": "horse"
-	},
+	
 	{
 		"name": "Ironclad",
 		"unitType": "Melee Water",
@@ -640,6 +613,21 @@
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// Modern era
 
