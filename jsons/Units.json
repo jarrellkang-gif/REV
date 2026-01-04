@@ -309,7 +309,7 @@
 		"cost": 135,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
-		"uniques": ["Founds a new city <on foreign continents>", "[+2] Sight"],,
+		"uniques": ["Founds a new city <on foreign continents>", "[+2] Sight"],
 		"attackSound": "horse"
 		//Conquistador should have no penalty attacking cities
 		//Ability to found new cities can only be used on a foreign continent that does not contain the Spanish capital.
