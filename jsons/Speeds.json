@@ -135,7 +135,7 @@
         "modifier": 3.0,
         "productionCostModifier": 3.0,
         "goldCostModifier": 3.0,
-        "scienceCostModifier": 9999999999999.0,
+        "scienceCostModifier": 9999999999999.0, //science cost modifier pumped up to make it impossible to scientifically progress
         "cultureCostModifier": 3.0,
         "faithCostModifier": 3.0,
         "improvementBuildLengthModifier": 3.0,
@@ -164,7 +164,7 @@
     {
         "name": "Sandbox",
         "modifier": 3.0,
-        "productionCostModifier": 0,
+        "productionCostModifier": 0, //all costs are set to zero
         "goldCostModifier": 0,
         "scienceCostModifier": 0,
         "cultureCostModifier": 0,
@@ -194,10 +194,10 @@
     {
         "name": "The Unending Sandbox",
         "modifier": 3.0,
-        "productionCostModifier": 0,
-        "goldCostModifier": 3.0,
-        "scienceCostModifier": 999999999999999.0,
-        "cultureCostModifier": 3.0,
+        "productionCostModifier": 0, //all costs are set to zero
+        "goldCostModifier": 0,
+        "scienceCostModifier": 999999999999999.0, //stagnant progress
+        "cultureCostModifier": 0,
         "faithCostModifier": 3.0,
         "improvementBuildLengthModifier": 3.0,
         "barbarianModifier": 4.0,
