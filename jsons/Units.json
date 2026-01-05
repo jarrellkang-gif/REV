@@ -42,6 +42,7 @@
 		"attackSound": "nonmetalhit"
 	},
 
+	
 	{
 		"name": "Light Warrior",
 		"unitType": "Sword",
@@ -124,18 +125,7 @@
 		"attackSound": "throw"
 	},
 
-
-
-	{
-		"name": "Archer",
-		"unitType": "Archery",
-		"movement": 3,
-		"strength": 2,
-		"rangedStrength": 7,
-		"cost": 200,
-		"uniques": ["[1] Range","Can move after attacking","Withraws before melee combat","Unable to capture cities", "Cannot be purchased"],
-		"attackSound": "arrow"
-	},
+	
 
 
 	/* Classical Era */
@@ -148,9 +138,10 @@
 		"cost": 100,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
-		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles",
-		"[+5]% Strength bonus for [Friendly] units within [1] tiles"],
+		"uniques": ["Can build [Road] improvements on tiles",
+					"Can build [Fort] improvements on tiles",
+					"[+5]% Strength bonus for [Friendly] units within [1] tiles",
+					"[+100]% maintenance costs"],
 		"attackSound": "metalhit"
 	},
 
@@ -163,8 +154,11 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
-		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles", "[+100]% maintenance costs",
-		"Cannot be purchased","[+10]% Strength bonus for [Friendly] units within [1] tiles"],
+		"uniques": ["Can build [Road] improvements on tiles",
+					"Can build [Fort] improvements on tiles",
+					"[+200]% maintenance costs",
+					"Cannot be purchased",
+					"[+10]% Strength bonus for [Sword] units within [1] tiles"],
 		"attackSound": "metalhit"
 	},
 
@@ -176,12 +170,35 @@
 		"cost": 200,
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Horses",
-		"uniques": ["[-70]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>",
-		"Unable to capture cities","[+100]% maintenance costs","Cannot be purchased","[+40]% to Flank Attack bonuses",
-		"[-30]% Strength <when defending>","[+20]% Strength bonus for [Friendly] units within [1] tiles"],
+		"uniques": ["[-70]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+150]% maintenance costs",
+					"Cannot be purchased",
+					"[+40]% to Flank Attack bonuses",
+					"[-30]% Strength <when defending>",
+					"[+10]% Strength bonus for [Mounted] units within [1] tiles"],
 		"attackSound": "horse"
 	},
 
+
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 3,
+		"strength": 2,
+		"rangedStrength": 7,
+		"cost": 200,
+		"uniques": ["[1] Range",
+					"Can move after attacking",
+					"Withraws before melee combat",
+					"Unable to capture cities",
+					"Cannot be purchased",
+					"[+100]% maintenance costs"],
+		"attackSound": "arrow"
+	},
+
+	
 	{
 		"name": "Heavy Horseman",
 		"unitType": "Mounted",
@@ -190,9 +207,14 @@
 		"cost": 300,
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Horses",
-		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+100]% Strength <vs [Wounded] units> <when attacking>",
-		"Unable to capture cities","[+200]% maintenance costs","Cannot be purchased","[+100]% to Flank Attack bonuses",
-		"[-25]% Strength <when defending>"],
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
+					"[+100]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+400]% maintenance costs",
+					"Cannot be purchased",
+					"[+100]% to Flank Attack bonuses",
+					"[-25]% Strength <when defending>",
+					"Consumes [1] Iron"],
 		"attackSound": "horse"
 	},
 	
@@ -203,9 +225,16 @@
 		"strength": 7,
 		"rangedStrength": 9,
 		"cost": 300,
-		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>",
-		"Unable to capture cities","[+100]% maintenance costs","Cannot be purchased","[+10]% to Flank Attack bonuses",
-		"[-100]% Strength <when defending>","Can move after attacking","[1] Range"],
+		"requiredResource": "Horses",
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+300]% maintenance costs",
+					"Cannot be purchased",
+					"[+10]% to Flank Attack bonuses",
+					"[-100]% Strength <when defending>",
+					"Can move after attacking",
+					"[1] Range"],
 		"attackSound": "arrow"
 	},
 
@@ -214,10 +243,14 @@
 		"unitType": "Mounted",
 		"movement": 4,
 		"strength": 20,
-		"cost": 600,
-		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+300]% Strength <vs [Wounded] units> <when attacking>",
-		"Unable to capture cities","[+200]% maintenance costs","Cannot be purchased","[+100]% to Flank Attack bonuses",
-		"[-300]% Strength <when defending>"],
+		"cost": 300,
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
+					"[+300]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+200]% maintenance costs",
+					"Cannot be purchased",
+					"[+100]% to Flank Attack bonuses",
+					"[-300]% Strength <when defending>"],
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Ivory",
 		"attackSound": "elephant"
@@ -301,6 +334,7 @@
 		"uniques": ["Cannot enter ocean tiles"],
 		"attackSound": "arrow"
 	},
+	
 	{
 		"name": "Knight",
 		"unitType": "Mounted",
@@ -1092,7 +1126,6 @@
             "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
             "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
             "Is part of Great Person group [Prophet]",
-            "[This Unit] gets a name from the [Prophet] group",
 			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
 			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
 			"Takes your religion over the one in their birth city"],
@@ -1104,7 +1137,6 @@
 		"unitType": "Civilian",
 		"uniques": [
             "[+15]% Strength bonus for [Military] units within [2] tiles",
-            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Can be earned through combat <for [Land] units>",
             "Is part of Great Person group [General]",
             "[This Unit] gets a name from the [General] group",
