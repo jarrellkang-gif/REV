@@ -125,7 +125,7 @@
 		"upgradesTo": "Musketeer", //valid, coz they will all be armed
 		"uniques": ["Can build [Road] improvements on tiles",
 					"Can build [Fort] improvements on tiles",
-					"[+5]% Strength bonus for [Friendly] units within [1] tiles",
+					"[+5]% Strength bonus for [Sword] units within [1] tiles",
 					"[+100]% maintenance costs"],
 		"attackSound": "metalhit"
 	},
@@ -179,7 +179,7 @@
 		"cost": 200,
 		"uniques": ["[2] Sight",
 					"Can move after attacking",
-					"Withraws before melee combat",
+					"Withdraws before melee combat",
 					"Unable to capture cities",
 					"Cannot be purchased",
 					"[+100]% maintenance costs"],
@@ -348,7 +348,11 @@
 		"requiredTech": "Civil Service",
 		"requiredResource": "Iron",
 		"uniques": ["[+100]% Strength <vs [Mounted] units>",
-					"Cannot be purchased"],
+					"Cannot be purchased",
+					"Can build [Road] improvements on tiles",
+					"Can build [Fort] improvements on tiles",
+					"[+10]% Strength bonus for [Sword] units within [1] tiles",
+					"[+100]% maintenance costs"],
 		"attackSound": "metalhit"
 	},
 
@@ -365,6 +369,9 @@
 					"Cannot be purchased",
 					"[+50]% Strength bonus for [Military] units within [1] tiles",
 					"[+50]% Strength <vs [Mounted] units>",
+					"[+110]% Strength <vs [Wounded] units> <when attacking>",
+					"[+70]% to Flank Attack bonuses",
+					"[+15]% Strength bonus for [Mounted] units within [1] tiles",
 					"Consumes [1] [Gold Ore]",
 					"Consumes [1] [Silver]",
 					"Consumes [3] [Iron]"],
@@ -478,7 +485,14 @@
 		"cost": 150,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Economice",
-		"attackSound": "shot"
+		"attackSound": "shot",
+		"uniques": [
+			"Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"[+5]% Strength bonus for [Gunpowder] units within [1] tiles",
+			"[+100]% maintenance costs",
+			"Cannot be purchased"
+		],
 	},
 	
 	{
