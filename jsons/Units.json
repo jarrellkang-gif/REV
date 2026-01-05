@@ -235,8 +235,9 @@
 		"unitType": "Mounted",
 		"movement": 4,
 		"strength": 20,
-		"cost": 500,
-		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
+		"cost": 600,
+		"obsoleteTech": "Replaceable Parts",
+		"uniques": ["[100]% Strength <vs cities> <when attacking>",
 					"[+300]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
 					"[+200]% maintenance costs",
@@ -261,7 +262,8 @@
 		"uniques": ["[+100]% Strength <vs cities> <when attacking>",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
-					"[-1] Sight"],
+					"[-1] Sight",
+					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
 
@@ -279,7 +281,8 @@
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"[-1] Sight",
-					"Can only attack [City] units"],
+					"Can only attack [City] units",
+					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
 
@@ -298,7 +301,8 @@
 					"[-1] Sight",
 					"Can only attack [City] units",
 					"[+100]% Strength <vs [Archery]> <when defending>",
-					"Consumes [3] Iron"],
+					"Consumes [3] Iron",
+					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
 
@@ -346,6 +350,7 @@
 		"strength": 16,
 		"cost": 110,
 		"requiredTech": "Civil Service",
+		"obsoleteTech": "Industrialization",
 		"requiredResource": "Iron",
 		"uniques": ["[+100]% Strength <vs [Mounted] units>",
 					"Cannot be purchased",
@@ -354,6 +359,7 @@
 					"[+10]% Strength bonus for [Sword] units within [1] tiles",
 					"[+100]% maintenance costs"],
 		"attackSound": "metalhit"
+		"upgradesTo": "Line Infantry"
 	},
 
 	{
@@ -374,7 +380,8 @@
 					"[+15]% Strength bonus for [Mounted] units within [1] tiles",
 					"Consumes [1] [Gold Ore]",
 					"Consumes [1] [Silver]",
-					"Consumes [3] [Iron]"],
+					"Consumes [3] [Iron]",
+					"[+100]% maintenance costs"],
 		"attackSound": "horse"
 	},
 
@@ -435,7 +442,8 @@
 					"Must set up to ranged attack",
 					"[-1] Sight",
 					"Never appears as a Barbarian unit",
-					"Can only attack [City] units"],
+					"Can only attack [City] units",
+					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
 
@@ -457,21 +465,6 @@
 	
 	
 	
-	{
-		"name": "Conquistador",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 20,
-		"cost": 135,
-		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
-		"uniques": ["Founds a new city <on foreign continents>", "[+2] Sight"],
-		"attackSound": "horse"
-		//maybe this is the equivalent of a settler but heavily armedd
-	},
-
-	
-	
 	
 
 	// Rennaisance Era
@@ -484,8 +477,9 @@
 		"strength": 28,
 		"cost": 150,
 		"requiredTech": "Gunpowder",
-		"obsoleteTech": "Economice",
+		"obsoleteTech": "Industrialization",
 		"attackSound": "shot",
+		"upgradesTo": "Line Infantry",
 		"uniques": [
 			"Can build [Road] improvements on tiles",
 			"Can build [Fort] improvements on tiles",
@@ -506,11 +500,12 @@
 		"uniques":["[-90]% Strength <vs cities> <when attacking>",
 					"[+300]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
-					"[+400]% maintenance costs",
+					"[+300]% maintenance costs",
 					"Cannot be purchased",
 					"[+100]% to Flank Attack bonuses",
 					"[-80]% Strength <when defending>",
-					"Consumes [1] [Iron]"],
+					"Consumes [1] [Iron]",
+					"Cannot be purchased"],
 		"obsoleteTech": "Combined Arms",
 		"attackSound": "horse"
 	},
@@ -551,7 +546,9 @@
 					"Cannot be purchased",
 					"[+100]% to Flank Attack bonuses",
 					"[-25]% Strength <when defending>",
-					"Consumes [1] [Iron]"],
+					"Consumes [1] [Iron]",
+					"[+10]% Strength bonus for [Mounted] units within [1] tiles",
+					"[+10]% Strength bonus for [Military] units within [1] tiles"],
 		"attackSound": "cavalry"
 	},
 
@@ -569,7 +566,9 @@
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"[-1] Sight",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Destroys tile improvements when attacking",
+					"Cannot be purchased"],
 		"attackSound": "cannon"
 	},
 
@@ -653,8 +652,31 @@
 		"movement": 2,
 		"strength": 25,
 		"cost": 100,
+		"requiredTech": "Industrialization",
+		"obsoleteTech": "Replaceable Parts",
+		"uniques": [
+			"Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+			"[+100]% maintenance costs",
+			"Cannot be purchased"],
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "[Au] Mercenary Line Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 30,
+		"cost": 100,
 		"requiredTech": "Economics",
 		"obsoleteTech": "Replaceable Parts",
+		"requiredResource": "Gold Ore",
+		"uniques": [
+			"Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+			"[+300]% maintenance costs"],
 		"attackSound": "shot"
 	},
 	
@@ -663,15 +685,16 @@
 		"unitType": "Siege",
 		"movement": 2,
 		"strength": 2,
-		"rangedStrength": 28,
+		"rangedStrength": 40,
 		"range": 2,
 		"cost": 200,
 		"requiredTech": "Scientific Theory",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
-					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"[-1] Sight",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Destroys tile improvements when attacking",
+					"Cannot be purchased"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -681,14 +704,16 @@
 		"unitType": "Siege",
 		"movement": 1,
 		"strength": 2,
-		"rangedStrength": 31,
+		"rangedStrength": 47,
 		"range": 2,
 		"cost": 320,
 		"requiredTech": "Scientific Theory",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
 					"Must set up to ranged attack",
 					"[-1] Sight",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Destroys tile improvements when attacking",
+					"Cannot be purchased"],
 		"attackSound": "artillery"
 	}
 
@@ -713,10 +738,16 @@
 		"name": "Rifleman",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 50,
+		"strength": 45,
 		"cost": 110,
 		"requiredTech": "Replaceable Parts",
-		"attackSound": "shot"
+		"attackSound": "shot",
+		"uniques": [
+			"Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+			"[+100]% maintenance costs",
+			"Cannot be purchased"],
 	},
 
 
@@ -848,8 +879,8 @@
 		"unitType": "Aircraft Carrier",
 		"movement": 5,
 		"strength": 40,
-		"cost": 375,
-		"requiredTech": "Electronics",
+		"cost": 1000,
+		"requiredTech": "Radar",
 		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
 	},
 	{
