@@ -44,11 +44,9 @@
 		"attackSound": "nonmetalhit"
 	},
 
+//ANCIENT ERA
 
 
-/* ANCIENT ERA----------------------------------------------------------------------------------------------------------------------------*//
-
-//LOW TIER	
 	{
 		"name": "Light Warrior",
 		"unitType": "Sword",
