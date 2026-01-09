@@ -4,7 +4,7 @@ format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 
-UnitIcons/Cuirassier
+Images.Construction/UnitIcons/Cuirassier
   rotate: false
   xy: 4, 4
   size: 200, 200
@@ -12,7 +12,7 @@ UnitIcons/Cuirassier
   offset: 0, 0
   index: -1
 
-UnitIcons/Light Horseman
+Images.Construction/UnitIcons/Light Horseman
   rotate: false
   xy: 0, 0
   size: 200, 200
@@ -20,7 +20,7 @@ UnitIcons/Light Horseman
   offset: 0, 0
   index: -1
 
-UnitIcons/Light Warrior
+Images.Construction/UnitIcons/Light Warrior
   rotate: false
   xy: 201, 0
   size: 200, 200
