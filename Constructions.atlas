@@ -4,13 +4,6 @@ format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 
-UnitIcons/Cuir
-  rotate: false
-  xy: 4, 4
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
 
 UnitIcons/Light Horseman
   rotate: false
