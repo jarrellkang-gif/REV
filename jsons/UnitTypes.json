@@ -57,7 +57,7 @@
 
     //gunpowder
     {
-        "name": "Musket",
+        "name": "Volley Firearms",
         "movementType": "Land",
         "civilopediaText": [
             { "text": "They use muskets. Note that muskets can also be rifled." }
@@ -65,7 +65,7 @@
     },
 
     {
-        "name": "Repeater Rifles",
+        "name": "Fire-and-Maneuver Firearms",
         "movementType": "Land",
         "civilopediaText": [
             { "text": "Using only one category for both line infantry in Napoleonic Wars and AK47 wielding children feels wrong." }
