@@ -694,13 +694,13 @@
 		"range": 2,
 		"cost": 200,
 		"requiredTech": "Scientific Theory",
+		"obsoleteTech": "Dynamite",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
 					"Must set up to ranged attack",
 					"[-1] Sight",
 					"Never appears as a Barbarian unit",
 					"Destroys tile improvements when attacking",
 					"Cannot be purchased"],
-		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
 
@@ -713,6 +713,7 @@
 		"range": 2,
 		"cost": 320,
 		"requiredTech": "Scientific Theory",
+		"obsoleteTech": "Dynamite",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
 					"Must set up to ranged attack",
 					"[-1] Sight",
@@ -753,6 +754,25 @@
 			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
 			"[+100]% maintenance costs",
 			"Cannot be purchased"],
+	},
+
+	{
+		"name": "Howitzer",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 2,
+		"rangedStrength": 50,
+		"range": 3,
+		"cost": 200,
+		"requiredTech": "Dynamite",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit",
+					"Destroys tile improvements when attacking",
+					"Cannot be purchased"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
 	},
 
 
@@ -811,7 +831,9 @@
 		"requiredTech": "Combustion",
 		"requiredResource": "Oil",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking"
+					,"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 	
@@ -824,7 +846,9 @@
 		"cost": 325,
 		"requiredTech": "Refrigeration",
 		"upgradesTo": "Nuclear Submarine",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit"],
+		"uniques": ["[+75]% Strength <when attacking>",
+					"Can only attack [Water] tiles",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "torpedo"
 	},
 	
@@ -842,7 +866,9 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Fighter",
 		"obsoleteTech": "Radar",
-		"uniques": ["[50]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"uniques": ["[50]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Bomber] units>",
+					"[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "machinegun"
 	},
 	
@@ -870,8 +896,11 @@
 		"interceptRange": 2,
 		"cost": 375,
 		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
-			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>"],
+		"uniques": ["Can see invisible [Submarine] units",
+					"[40]% chance to intercept air attacks",
+					"Withdraws before melee combat <with [80]% chance>",
+					"[+100]% Strength <vs [Submarine] units>",
+					"Never appears as a Barbarian unit",],
 		"attackSound": "shipguns"
 	},
 
@@ -886,7 +915,9 @@
 		"strength": 40,
 		"cost": 1000,
 		"requiredTech": "Radar",
-		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+		"uniques": ["Cannot attack",
+					"Can carry [2] [Aircraft] units",
+					"Never appears as a Barbarian unit",]
 	},
 	{
 		"name": "Battleship",
@@ -914,7 +945,10 @@
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Mobile SAM",
 		"obsoleteTech": "Rocketry",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>", "[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[100]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air] units>",
+					"[+150]% Strength <vs [Helicopter] units>",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
 	
@@ -929,7 +963,9 @@
 		"cost": 350,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -940,7 +976,8 @@
 		"cost": 350,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 
@@ -952,7 +989,9 @@
 		"cost": 350,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 
@@ -965,7 +1004,9 @@
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
-		"uniques": ["[+1] Sight <when [Embarked]>", "[+100]% Strength <when defending> <when [Embarked]>"],
+		"uniques": ["[+1] Sight <when [Embarked]>",
+					"[+100]% Strength <when defending> <when [Embarked]>",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "shot"
 	},
 	{
@@ -980,7 +1021,9 @@
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"uniques": ["[100]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Bomber] units>",
+					"[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "machinegun"
 	},
 	
@@ -1005,8 +1048,9 @@
 		"strength": 65,
 		"cost": 375,
 		"requiredTech": "Radar",
-		"uniques": ["May Paradrop to [Land] tiles up to [20] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit",
-			"No Movement Cost to Pillage"],
+		"uniques": ["May Paradrop to [Land] tiles up to [20] tiles away <in [{Friendly} {Land}] tiles>",
+					"Never appears as a Barbarian unit",
+					"No Movement Cost to Pillage"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
@@ -1019,7 +1063,8 @@
 		"cost": 300,
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Helicopter Gunship",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[+100]% Strength <vs [Armored] units>",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
 
@@ -1051,8 +1096,10 @@
 		"cost": 425,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Aluminum",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"[-1] Sight", "Never appears as a Barbarian unit"],
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -1064,8 +1111,10 @@
 		"strength": 65,
 		"cost": 425,
 		"requiredTech": "Rocketry",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>",
-			"[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[100]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air] units>",
+					"[+150]% Strength <vs [Helicopter] units>",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "missile"
 	},
 	{
@@ -1089,8 +1138,10 @@
 		"range": 12,
 		"cost": 1000,
 		"requiredTech": "Advanced Ballistics",
-		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
-			"Blast radius [2]", "Consumes [2] [Uranium]"],
+		"uniques": ["Nuclear weapon of Strength [2]",
+					"Only available <if [Manhattan Project] is constructed>",
+					"Blast radius [2]", 
+					"Consumes [2] [Uranium]"],
 		"attackSound": "nuke"
 		//jackpot nuclear missile consumes 2 uranium hahahahahha
 	},
@@ -1119,7 +1170,11 @@
 		"rangedStrength": 85,
 		"cost": 425,
 		"requiredTech": "Telecommunications",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
+		"uniques": ["[+75]% Strength <when attacking>",
+					"Can only attack [Water] tiles",
+					"[+1] Sight",
+					"Can carry [2] [Missile] units", 
+					"Never appears as a Barbarian unit"],
 		"attackSound": "torpedo"
 	},
 	{
@@ -1142,8 +1197,11 @@
 		"interceptRange": 2,
 		"cost": 425,
 		"requiredTech": "Robotics",
-		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
-			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[100]% chance to intercept air attacks", 
+					"Can see invisible [Submarine] units",
+					"Can carry [3] [Missile] units", 
+					"[+100]% Strength <vs [Submarine] units>", 
+					"Never appears as a Barbarian unit"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 	},
@@ -1155,7 +1213,8 @@
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -1169,7 +1228,9 @@
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"uniques": ["[100]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Bomber] units>",
+					"[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "jetgun"
 	},
 	{
@@ -1182,7 +1243,8 @@
 		"cost": 425,
 		"requiredTech": "Stealth",
 		"requiredResource": "Aluminum",
-		"uniques": ["Damage taken from interception reduced by [100]%", "Cannot be carried by [Carrier] units", "[+4] Sight", "Can see over obstacles"],
+		"uniques": ["Damage taken from interception reduced by [70]%", 
+					"Cannot be carried by [Carrier] units"],
 		"attackSound": "bombing"
 	},
 
