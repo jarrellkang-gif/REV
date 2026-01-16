@@ -750,9 +750,10 @@
 		"attackSound": "shot",
 		"uniques": [
 			"Can build [Road] improvements on tiles",
+			"Can build [Railroad] improvements on tiles",
 			"Can build [Fort] improvements on tiles",
 			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
-			"[+100]% maintenance costs",
+			"[+200]% maintenance costs",
 			"Cannot be purchased"],
 	},
 
@@ -765,12 +766,18 @@
 		"range": 3,
 		"cost": 200,
 		"requiredTech": "Dynamite",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+		"uniques": ["[+250]% Strength <vs cities> <when attacking>",
+					"[+100]% Strength <with [10]% chance> <when attacking> <vs [Gunpowder] units>",
+					"[+10]% Strength <with [10]% chance> <when attacking> <vs [Armored] units>",
+					"[-90]% Strength <vs [Helicopter] units>",
+					"[-90]% Strength <vs [Air] units>",
 					"Must set up to ranged attack",
 					"[-1] Sight",
 					"Never appears as a Barbarian unit",
 					"Destroys tile improvements when attacking",
-					"Cannot be purchased"],
+					"Cannot be purchased",
+					"[+100]% maintenance costs",
+					"Consumes [1] [Iron]"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -791,6 +798,9 @@
 					"Unit will heal every turn, even if it performs an action",
 					"[-70]% Strength <when attacking>",
 					"May capture killed [Wounded] units",
+					"May capture killed [Armored] units",
+					"May capture killed [Siege] units",
+					"May capture killed [Helicopter] units",
 					"[+100]% XP gained from combat",
 					"Ignores Zone of Control",
 					"[+20]% Strength bonus for [Friendly] units within [2] tiles"]
@@ -814,6 +824,9 @@
 					"[-70]% Strength <when attacking>",
 					"[150]% Strength <when defending>",
 					"May capture killed [Wounded] units",
+					"May capture killed [Armored] units",
+					"May capture killed [Siege] units",
+					"May capture killed [Helicopter] units",
 					"[+100]% XP gained from combat",
 					"Ignores Zone of Control",
 					"[+20]% Strength bonus for [Friendly] units within [2] tiles",
@@ -833,7 +846,10 @@
 		"obsoleteTech": "Combined Arms",
 		"uniques": ["Can move after attacking"
 					,"No defensive terrain bonus",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+500]% maintenance costs",
+					"Consumes [2] [Iron]",
+					"Consumes [3] [Oil]"],
 		"attackSound": "tankshot"
 	},
 	
@@ -848,7 +864,11 @@
 		"upgradesTo": "Nuclear Submarine",
 		"uniques": ["[+75]% Strength <when attacking>",
 					"Can only attack [Water] tiles",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+600]% maintenance costs",
+					"Consumes [2] [Iron]",
+					"Consumes [1] [Aluminum]",
+					"Consumes [2] [Oil]"],
 		"attackSound": "torpedo"
 	},
 	
@@ -868,7 +888,9 @@
 		"obsoleteTech": "Radar",
 		"uniques": ["[50]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Bomber] units>",
-					"[+150]% Strength <vs [Helicopter] units>"],
+					"[+150]% Strength <vs [Helicopter] units>",
+					"[+300]% maintenance costs",
+					"Consumes [2] Oil"],
 		"attackSound": "machinegun"
 	},
 	
@@ -882,6 +904,10 @@
 		"cost": 325,
 		"requiredTech": "Flight",
 		"requiredResource": "Oil",
+		"uniques": [
+			"[+400]% maintenance costs",
+			"Consumes [3] [Oil]"
+		],
 		"upgradesTo": "Bomber",
 		"obsoleteTech": "Radar",
 		"attackSound": "bombing"
@@ -900,7 +926,11 @@
 					"[40]% chance to intercept air attacks",
 					"Withdraws before melee combat <with [80]% chance>",
 					"[+100]% Strength <vs [Submarine] units>",
-					"Never appears as a Barbarian unit",],
+					"Never appears as a Barbarian unit",
+					"[+500]% maintenance costs",
+					"Consumes [2] [Aluminum]",
+					"Consumes [3] [Iron]",
+					"Consumes [3] [Oil]"],
 		"attackSound": "shipguns"
 	},
 
@@ -917,7 +947,11 @@
 		"requiredTech": "Radar",
 		"uniques": ["Cannot attack",
 					"Can carry [2] [Aircraft] units",
-					"Never appears as a Barbarian unit",]
+					"Never appears as a Barbarian unit",
+					"[+1000]% maintenance costs",
+					"Consumes [5] [Aluminum]",
+					"Consumes [3] [Iron]",
+					"Consumes [4] [Oil]"]
 	},
 	{
 		"name": "Battleship",
@@ -929,7 +963,11 @@
 		"cost": 375,
 		"requiredResource": "Oil",
 		"requiredTech": "Electronics",
-		"uniques": ["Never appears as a Barbarian unit"],
+		"uniques": ["Never appears as a Barbarian unit",
+					"[+900]% maintenance costs",
+					"Consumes [1] [Aluminum]",
+					"Consumes [7] [Iron]",
+					"Consumes [5] [Oil]"],],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 		// Does not actually upgrade to Missile Cruisers
@@ -948,7 +986,9 @@
 		"uniques": ["[100]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Air] units>",
 					"[+150]% Strength <vs [Helicopter] units>",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+100]% maintenance costs",,
+					"Consumes [3] [Iron]"],
 		"attackSound": "machinegun"
 	},
 	
@@ -965,7 +1005,11 @@
 		"requiredResource": "Oil",
 		"uniques": ["Can move after attacking",
 					"No defensive terrain bonus",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+200]% maintenance costs",
+					"Consumes [1] [Aluminum]",
+					"Consumes [2] [Iron]",
+					"Consumes [1] [Oil]"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -977,7 +1021,11 @@
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
 		"uniques": ["Can move after attacking",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+300]% maintenance costs",
+					"Consumes [1] [Aluminum]",
+					"Consumes [3] [Iron]",
+					"Consumes [1] [Oil]"],
 		"attackSound": "tankshot"
 	},
 
@@ -991,7 +1039,11 @@
 		"requiredResource": "Oil",
 		"uniques": ["Can move after attacking",
 					"No defensive terrain bonus",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+500]% maintenance costs",
+					"Consumes [2] [Aluminum]",
+					"Consumes [4] [Iron]",
+					"Consumes [2] [Oil]"],
 		"attackSound": "tankshot"
 	},
 
@@ -1006,7 +1058,8 @@
 		"promotions": ["Amphibious"],
 		"uniques": ["[+1] Sight <when [Embarked]>",
 					"[+100]% Strength <when defending> <when [Embarked]>",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+200]% maintenance costs"],
 		"attackSound": "shot"
 	},
 	{
@@ -1021,9 +1074,13 @@
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks",
+		"uniques": ["[600]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Bomber] units>",
-					"[+150]% Strength <vs [Helicopter] units>"],
+					"[+150]% Strength <vs [Helicopter] units>",
+					"[+800]% maintenance costs",
+					"Consumes [1] [Aluminum]",
+					"Consumes [1] [Iron]",
+					"Consumes [3] [Oil]"],
 		"attackSound": "machinegun"
 	},
 	
@@ -1037,6 +1094,10 @@
 		"cost": 375,
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
+		"uniques": ["[+600]% maintenance costs",
+					"Consumes [1] [Aluminum]",
+					"Consumes [1] [Iron]",
+					"Consumes [4] [Oil]"],
 		"upgradesTo": "Stealth Bomber",
 		"attackSound": "bombing"
 	},
@@ -1050,7 +1111,8 @@
 		"requiredTech": "Radar",
 		"uniques": ["May Paradrop to [Land] tiles up to [20] tiles away <in [{Friendly} {Land}] tiles>",
 					"Never appears as a Barbarian unit",
-					"No Movement Cost to Pillage"],
+					"No Movement Cost to Pillage",
+					"[+200]% maintenance costs"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
@@ -1064,7 +1126,9 @@
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Helicopter Gunship",
 		"uniques": ["[+100]% Strength <vs [Armored] units>",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Consumes [2] [Iron]",
+					"[+100]% maintenance costs"],
 		"attackSound": "machinegun"
 	},
 
@@ -1092,14 +1156,16 @@
 		"movement": 2,
 		"strength": 45,
 		"rangedStrength": 60,
-		"range": 3,
+		"range": 4,
 		"cost": 425,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Aluminum",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
 					"No defensive terrain bonus",
 					"[-1] Sight",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+500]% maintenance costs",
+					"Consumes [2] [Aluminum]"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -1112,16 +1178,19 @@
 		"cost": 425,
 		"requiredTech": "Rocketry",
 		"uniques": ["[100]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air] units>",
-					"[+150]% Strength <vs [Helicopter] units>",
-					"Never appears as a Barbarian unit"],
+					"[+200]% Strength <vs [Air] units>",
+					"[-90]% Strength <vs [Gunpowder] units>",
+					"[-95]% Strength <vs [Armored] units>",
+					"[+240]% Strength <vs [Helicopter] units>",
+					"Never appears as a Barbarian unit",
+					"[+500]% maintenance costs"],
 		"attackSound": "missile"
 	},
 	{
 		"name": "Guided Missile",
 		"unitType": "Missile",
 		"movement": 1,
-		"strength": 60,
+		"strength": 120,
 		"rangedStrength": 60,
 		"range": 8,
 		"cost": 150,
@@ -1150,13 +1219,18 @@
 		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
-		"movement": 6,
+		"movement": 8,
 		"strength": 60,
 		"cost": 425,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
-			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
+		"uniques": ["[+100]% Strength <vs [Armored] units>",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"All tiles cost 1 movement",
+					"Ignores Zone of Control", 
+					"Unable to capture cities",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
 
