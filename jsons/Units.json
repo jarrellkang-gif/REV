@@ -1054,7 +1054,7 @@
 					"Rough terrain penalty",
 					"Unable to capture cities",
 					"[+20]% Strength <when attacking> <vs [Gunpowder] units>",
-					"[-30]% Strength <when defending> <vs [Gunpowder] units> <in [Rough] terrain>",
+					"[-10]% Strength <when defending> <vs [Gunpowder] units>",
 					"[+50]% Strength <vs [Armored] units>",
 
 			
@@ -1077,9 +1077,9 @@
 		"uniques":  ["Can move after attacking",
 					"Rough terrain penalty",
 
-					"[+20]% Strength <when attacking> <vs [Gunpowder] units>",
-					"[-30]% Strength <when defending> <vs [Gunpowder] units> <in [Rough] terrain>",
-					"[+50]% Strength <vs [Armored] units",
+					"[+30]% Strength <when attacking> <vs [Gunpowder] units>",
+					"[-10]% Strength <when defending> <vs [Gunpowder] units>",
+					"[+50]% Strength <vs [Armored] units>",
 			
 					"Unable to capture cities",
 					"Never appears as a Barbarian unit",
@@ -1391,6 +1391,11 @@
 		"uniques": ["Can move after attacking",
 					"Rough terrain penalty",
 					"Unable to capture cities",
+
+					"[+1] Sight",
+					"[+50]% Strength <when attacking> <vs [Gunpowder] units>",
+					"[-10]% Strength <when defending> <vs [Gunpowder] units>",
+					"[+50]% Strength <vs [Armored] units>",
 			
 					"Never appears as a Barbarian unit",
 					"[+700]% maintenance costs",
