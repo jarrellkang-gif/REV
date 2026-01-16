@@ -140,7 +140,7 @@
             "Considered [Undesirable] when determining start locations",
 			"[4] Sight",
 			"Blocks line-of-sight from tiles at same elevation",
-			"[+100]% Strength for cities built on this terrain"]
+			"[+10] Strength for cities built on this terrain"]
 	},
 	{
 		"name": "Snow",
