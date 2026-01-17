@@ -754,6 +754,8 @@
 			"Can build [Railroad] improvements on tiles",
 			"Can build [Fort] improvements on tiles",
 			"[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+
+			"Never appears as a Barbarian unit",
 			"[+200]% maintenance costs",
 			"Cannot be purchased"],
 	},
@@ -1329,7 +1331,7 @@
 					"Rough terrain penalty",
 					"[+30]% Strength bonus for [Gunpowder] units within [1] tiles",
 
-					"Never appears as a barbarian units",
+					"Never appears as a barbarian unit",
 					"[+400]% maintenance costs",
 					"Cannot be purchased",
 					"Consumes [1] [Oil]"],
