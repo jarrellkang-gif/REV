@@ -963,7 +963,7 @@
 			"Invisible to non-adjacent units",
 
 			"[+60]% Strength <when defending>",
-			"[+100]% Strength <when defending> <against [Ranged] units>"
+			"[+100]% Strength <when defending> <vs [Ranged] units>"
 		],
 		"attackSound": "shot"
 	},
@@ -1130,7 +1130,7 @@
 			"Invisible to non-adjacent units",
 			
 			"[+80]% Strength <when defending>",
-			"[+100]% Strength <when defending> <against [Ranged] units>"
+			"[+100]% Strength <when defending> <vs [Ranged] units>"
 		
 		
 		
