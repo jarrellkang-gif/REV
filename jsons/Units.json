@@ -918,7 +918,7 @@
 			"Damage taken from interception reduced by [20]%",
 			
 			"Consumes [2] [Iron]",
-			"Consumes [1] Iron"
+			"Consumes [1] [Oil]"
 		],
 		"attackSound": "torpedo"
 	},
