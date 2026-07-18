@@ -944,9 +944,6 @@
 		"uniqueTo": "Barbarians",
 		
 		"uniques": [
-			"Unbuildable",
-			"Cannot be purchased",
-			
 			"Destroys tile improvements when attacking",
 			"[+80]% Health from pillaging tiles",
 			"No movement cost to pillage",
