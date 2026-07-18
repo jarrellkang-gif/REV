@@ -931,56 +931,10 @@
 		"cost": 320,
 		"requiredTech": "Replaceable Parts",
 		"uniques": [
-			"Never appears as a Barbarian unit",
-
 			"Can build [Road] improvements on tiles",
 			"Can build [Fort] improvements on tiles"
 		"attackSound": "shot"
 	},
-
-	{
-		"name": "Guerilla",
-		"unitType": "Gunpowder",
-		"movement": 5,
-		"strength": 30,
-		"cost": 0,
-		"requiredTech": "Replaceable Parts",
-		"uniqueTo": "Barbarians",
-		
-		"uniques": [
-			"[+80]% Health from pillaging tiles",
-			"No movement cost to pillage",
-			"[+15] HP when healing",
-			"Destroys [in all cities] cities instead of capturing",
-			"No movement cost to pillage",
-			
-			"May capture killed [Armored] units",
-			"May capture killed [Siege] units",
-			"May capture killed [Gunpowder] units",
-			
-			"Uncapturable",
-			
-			"Withdraws before melee combat <with [80]% chance>",
-			"Can move after attacking",
-			
-			"Heals [3] damage if it kills a unit",
-			"Unit will heal every turn, even if it performs an action",
-			"[20] XP gained from combat",
-			"[+200]% XP gained from combat",
-			"Invisible to non-adjacent units",
-
-			"[+200]% Strength <when defending>",
-			"[+150]% Strength <when defending> <vs [Ranged] units>",
-			"[+50]% Strength <when attacking> <vs [Armored] units>",
-			
-			"[+100]% to Flank Attack bonuses",
-			"[+20]% Strength bonus for [Wounded] units within [2] tiles",
-			"No damage penalty for wounded units",
-
-		],
-		"attackSound": "shot"
-	},
-	
 	{
 		"name": "Fighter",
 		"unitType": "Fighter",
