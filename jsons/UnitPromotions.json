@@ -162,7 +162,7 @@
 	{
 		"name": "Formation II",
 		"prerequisites": ["Formation I"],
-		"uniques": ["[+33]% Strength <vs [Mounted] units>"],
+		"uniques": ["[+33]% Strength <vs [Mounted] units>",
 					"[+33]% Strength <vs [Armored] units>",
 					"[+33]% Strength <vs [Armored] units> <when defending>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted"],
