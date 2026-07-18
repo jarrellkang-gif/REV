@@ -876,7 +876,7 @@
 	{
 		"name": "Artillery",
 		"unitType": "Siege",
-		"movement": 2,
+		"movement": 1,
 		"strength": 16,
 		"rangedStrength": 36,
 		"range": 3,
@@ -947,7 +947,7 @@
 			"Destroys tile improvements when attacking",
 			"[+80]% Health from pillaging tiles",
 			"No movement cost to pillage",
-			"[5] HP when healing",
+			"[+15] HP when healing",
 			"Destroys [in all cities] cities instead of capturing",
 			"No movement cost to pillage",
 			
@@ -972,7 +972,8 @@
 			
 			"[+100]% to Flank Attack bonuses",
 			"[+20]% Strength bonus for [Wounded] units within [2] tiles",
-			"No damage penalty for wounded units"
+			"No damage penalty for wounded units",
+
 		],
 		"attackSound": "shot"
 	},
@@ -1006,7 +1007,7 @@
 	{
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
-		"movement": 2,
+		"movement": 1,
 		"strength": 210,
 		"cost": 2880,
 		"requiredTech": "Flight",
@@ -1025,7 +1026,7 @@
 	{
 		"name": "Battleship",
 		"unitType": "Ranged Water",
-		"movement": 2,
+		"movement": 1,
 		"strength": 220,
 		"rangedStrength": 300,
 		"range": 4,
@@ -1050,7 +1051,7 @@
 	{
 		"name": "Anti-Aircraft Gun",
 		"unitType": "Gunpowder",
-		"movement": 2,
+		"movement": 1,
 		"interceptRange": 2,
 		"strength": 40,
 		"cost": 360,
@@ -1074,7 +1075,7 @@
 	{
 		"name": "Destroyer",
 		"unitType": "Melee Water",
-		"movement": 6,
+		"movement": 4,
         "interceptRange": 2,
         "rangedStrength": 40,
 		"strength": 100,
@@ -1122,7 +1123,7 @@
 	{
 		"name": "Paratrooper",
 		"unitType": "Gunpowder",
-		"movement": 2,
+		"movement": 3,
 		"strength": 40,
 		"cost": 3200,
 		"requiredTech": "Radar",
@@ -1133,7 +1134,7 @@
 			"May Paradrop to [Land] tiles up to [50] tiles away <in [{Friendly} {Land}] tiles>",
 			"[+80]% Health from pillaging tiles",
 			"No movement cost to pillage",
-			"[5] HP when healing",
+			"[+25] HP when healing",
 			"Withdraws before melee combat <with [80]% chance>",
 			"Can move after attacking",
 			"Heals [3] damage if it kills a unit",
@@ -1157,7 +1158,7 @@
 	{
 		"name": "Tank",
 		"unitType": "Armored",
-		"movement": 5,
+		"movement": 2,
 		"strength": 100,
 		"cost": 1280,
 		"requiredTech": "Combustion",
@@ -1181,7 +1182,7 @@
 	{
 		"name": "Anti-Tank Gun",
 		"unitType": "Gunpowder",
-		"movement": 2,
+		"movement": 1,
 		"strength": 10,
 		"rangedStrength": 120,
 		"range": 2,
@@ -1243,7 +1244,7 @@
 	{
 		"name": "Mobile SAM",
 		"unitType": "Gunpowder",
-		"movement": 3,
+		"movement": 2,
 		"interceptRange": 5,
 		"strength": 50,
 		"cost": 1200,
@@ -1390,7 +1391,7 @@
 	{
 		"name": "Modern Armor",
 		"unitType": "Armored",
-		"movement": 5,
+		"movement": 3,
 		"strength": 130,
 		"rangedStrength": 110,
 		"range": 2,
@@ -1442,7 +1443,7 @@
 	{
 		"name": "Giant Death Robot",
 		"unitType": "Armored",
-		"movement": 3,
+		"movement": 2,
 		"strength": 210,
 		"rangedStrength": 200,
 		"range": 2,
@@ -1529,9 +1530,10 @@
 		"name": "Great Engineer",
 		"unitType": "Civilian",
 		"uniques": ["Can speed up construction of a building",
-            "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
-            "Is part of Great Person group [Engineer]",
-            "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+            	"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+            	"Is part of Great Person group [Engineer]",
+            	"Great Person - [Production]",
+				"Unbuildable"],
 		"movement": 2
 	},
 	{
@@ -1539,27 +1541,18 @@
 		"unitType": "Civilian",
 		"uniques": [
             "Empire enters a [8]-turn Golden Age <by consuming this unit>",
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "[+50]% Strength bonus for [Military] units within [1] tiles",
+			"[+50]% Strength bonus for [Military] units within [2] tiles",
+			"[+50]% Strength bonus for [Military] units within [3] tiles",
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"All adjacent units heal [+15] HP when healing",
+			"[+25] HP when healing",
 			"Can be earned through combat",
             "Is part of Great Person group [General]",
-			"Great Person - [War]", "Unbuildable", "Uncapturable"],
+			"Great Person - [War]",
+			"Unbuildable",
+			"Uncapturable"],
 		"movement": 2
-	},
-	{
-		"name": "Khan",
-		"unitType": "Civilian",
-		"uniqueTo": "Mongolia",
-		"replaces": "Great General",
-		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
-			"All adjacent units heal [+15] HP when healing", "[+15] HP when healing",
-            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
-			"Can be earned through combat",
-            "Is part of Great Person group [General]",
-            "Great Person - [War]", "Unbuildable", "Uncapturable"],
-		"movement": 5
 	},
 
 	/* Spaceship Parts */
