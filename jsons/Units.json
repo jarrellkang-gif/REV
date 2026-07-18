@@ -937,8 +937,8 @@
 	{
 		"name": "Guerilla",
 		"unitType": "Gunpowder",
-		"movement": 4,
-		"strength": 28,
+		"movement": 5,
+		"strength": 30,
 		"cost": 0,
 		"requiredTech": "Replaceable Parts",
 		"uniqueTo": "Barbarians",
@@ -959,11 +959,11 @@
 			"Heals [3] damage if it kills a unit",
 			"Unit will heal every turn, even if it performs an action",
 			"[20] XP gained from combat",
-			"[+100]% XP gained from combat",
+			"[+200]% XP gained from combat",
 			"Invisible to non-adjacent units",
 
-			"[+60]% Strength <when defending>",
-			"[+100]% Strength <when defending> <vs [Ranged] units>"
+			"[+200]% Strength <when defending>",
+			"[+150]% Strength <when defending> <vs [Ranged] units>"
 		],
 		"attackSound": "shot"
 	},
@@ -988,7 +988,9 @@
 			"Destroys tile improvements when attacking",
 			"[+1] Sight",
 			
-			"Consumes [1] [Oil]"],
+			"Consumes [1] [Oil]",
+			"Consumes [1] [Aluminum]"
+		],
         // TODO: Weak Ranged Attack
 		"attackSound": "machinegun"
 	},
@@ -1103,7 +1105,9 @@
 			"[-33]% Strength <vs [Water] units>",
 			"Destroys tile improvements when attacking",
 			
-			"Consumes [3] [Oil]"],
+			"Consumes [3] [Oil]",
+			"Consumes [1] [Aluminum]"
+		],
 		"attackSound": "bombing"
 	},
 	{
@@ -1111,7 +1115,7 @@
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 40,
-		"cost": 1600,
+		"cost": 3200,
 		"requiredTech": "Radar",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1129,8 +1133,8 @@
 			"[+100]% XP gained from combat",
 			"Invisible to non-adjacent units",
 			
-			"[+80]% Strength <when defending>",
-			"[+100]% Strength <when defending> <vs [Ranged] units>"
+			"[+100]% Strength <when defending>",
+			"[+150]% Strength <when defending> <vs [Ranged] units>"
 		
 		
 		
