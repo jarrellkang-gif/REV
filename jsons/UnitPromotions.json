@@ -87,7 +87,7 @@
 	// Melee, Mounted+Armor
 	{
 		"name": "Shock I",
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>", "[-90]% weight to this choice for AI decisions"],
+		"uniques": ["[+25]% Strength <vs [Wounded] units>", "[-90]% weight to this choice for AI decisions"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 1
@@ -95,7 +95,7 @@
 	{
 		"name": "Shock II",
 		"prerequisites": ["Shock I"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+15]% Strength"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 2
@@ -103,7 +103,7 @@
 	{
 		"name": "Shock III",
 		"prerequisites": ["Shock II"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+15]% Strength"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 3
@@ -111,7 +111,7 @@
 
 	{
 		"name": "Drill I",
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>", "[-90]% weight to this choice for AI decisions"],
+		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles>", "[-90]% weight to this choice for AI decisions"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 5,
         "row": 1
@@ -119,7 +119,7 @@
 	{
 		"name": "Drill II",
 		"prerequisites": ["Drill I"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 5,
         "row": 2
@@ -127,7 +127,7 @@
 	{
 		"name": "Drill III",
 		"prerequisites": ["Drill II"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+15]% Strength"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 5,
         "row": 3
@@ -192,7 +192,8 @@
 	{
 		"name": "Medic",
 		"prerequisites": ["Shock I", "Drill I", "Scouting II", "Survivalism II"],
-		"uniques": ["All adjacent units heal [+5] HP when healing", "[-50]% weight to this choice for AI decisions"],
+		"uniques": ["All adjacent units heal [+5] HP when healing", "Unit will heal every turn, even if it performs an action",
+			"[-50]% weight to this choice for AI decisions"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
         "row": 1
@@ -200,7 +201,7 @@
 	{
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+5] HP when healing"],
+		"uniques": ["All adjacent units heal [+5] HP when healing", "All healing effects doubled"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10,
         "row": 2
@@ -210,7 +211,7 @@
 	{
 		"name": "Scouting I",
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 8,
         "row": 1
 	},
@@ -218,7 +219,7 @@
 		"name": "Scouting II",
 		"prerequisites": ["Scouting I"],
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 8,
         "row": 2
 	},
@@ -241,7 +242,7 @@
 		"name": "Survivalism II",
 		"prerequisites": ["Survivalism I"],
 		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 9,
         "row": 2
 	},
@@ -249,7 +250,7 @@
 		"name": "Survivalism III",
 		"prerequisites": ["Survivalism II"],
 		"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 9,
         "row": 3
 	},
