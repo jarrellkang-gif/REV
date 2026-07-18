@@ -959,7 +959,7 @@
 			"Withdraws before melee combat <with [75]% chance>",
 			"Can move after attacking",
 			
-			"Heals [3] damage if it kills a unit>",
+			"Heals [35] damage if it kills a unit",
 			"Unit will heal every turn, even if it performs an action",
 			"[20] XP gained from combat",
 			"[+200]% XP gained from combat",
