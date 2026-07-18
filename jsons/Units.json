@@ -910,7 +910,7 @@
 		"strength": 25,
 		"rangedStrength": 60,
         "range": 3,
-		"cost": 375,
+		"cost": 960,
 		"requiredTech": "Refrigeration",
 		"upgradesTo": "Nuclear Submarine",
 		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit", "Invisible to non-adjacent units",
@@ -946,10 +946,13 @@
 		"uniques": [
 			"Destroys tile improvements when attacking",
 			"[+80]% Health from pillaging tiles",
+			"May capture killed [Armored] units",
+			"May capture killed [Siege] units",
+			"May capture killed [Gunpowder] units",
 			"No movement cost to pillage",
 			"[5] HP when healing",
 			"Uncapturable",
-			"Withdraws before melee combat",
+			"Withdraws before melee combat <with [80]% chance>",
 			"Destroys [in all cities] cities instead of capturing",
 			"Can move after attacking",
 			"No movement cost to pillage",
@@ -958,9 +961,9 @@
 			"[20] XP gained from combat",
 			"[+100]% XP gained from combat",
 			"Invisible to non-adjacent units",
-			"Cannot embark",
 
-			"[+60]% Strength <when defending>"
+			"[+60]% Strength <when defending>",
+			"[+100]% Strength <when defending> <against [Ranged] units>"
 		],
 		"attackSound": "shot"
 	},
@@ -973,7 +976,7 @@
 		"rangedStrength": 40,
 		"range": 8,
 		"interceptRange": 8,
-		"cost": 640,
+		"cost": 960,
 		"requiredTech": "Flight",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -994,7 +997,7 @@
 		"unitType": "Aircraft Carrier",
 		"movement": 2,
 		"strength": 210,
-		"cost": 1920,
+		"cost": 2880,
 		"requiredTech": "Flight",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1015,7 +1018,7 @@
 		"strength": 220,
 		"rangedStrength": 300,
 		"range": 4,
-		"cost": 1920,
+		"cost": 3200,
 		"requiredTech": "Telegraph",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1064,7 +1067,7 @@
         "interceptRange": 2,
         "rangedStrength": 40,
 		"strength": 100,
-		"cost": 800,
+		"cost": 2000,
 		"requiredTech": "Combustion",
 		"uniques": [
 			"Cannot be purchased",
@@ -1092,7 +1095,7 @@
 		"strength": 50,
 		"rangedStrength": 50,
 		"range": 12,
-		"cost": 800,
+		"cost": 1600,
 		"requiredTech": "Radar",
         "uniques": [
 			"Cannot be purchased",
@@ -1100,7 +1103,7 @@
 			"[-33]% Strength <vs [Water] units>",
 			"Destroys tile improvements when attacking",
 			
-			"Consumes [2] [Oil]"],
+			"Consumes [3] [Oil]"],
 		"attackSound": "bombing"
 	},
 	{
@@ -1108,19 +1111,30 @@
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 40,
-		"cost": 740,
+		"cost": 1600,
 		"requiredTech": "Radar",
 		"uniques": [
 			"Never appears as a Barbarian unit",
 			"Cannot be purchased",
 
 			"May Paradrop to [Land] tiles up to [50] tiles away <in [{Friendly} {Land}] tiles>",
-			"May capture killed [Gunpowder] units",
+			"[+80]% Health from pillaging tiles",
+			"No movement cost to pillage",
+			"[5] HP when healing",
+			"Withdraws before melee combat <with [80]% chance>",
+			"Can move after attacking",
+			"Heals [3] damage if it kills a unit",
+			"Unit will heal every turn, even if it performs an action",
+			"[20] XP gained from combat",
+			"[+100]% XP gained from combat",
 			"Invisible to non-adjacent units",
-			"No movement cost to pillage", 
-			"May heal outside of friendly territory",
-			"Heals [2] damage if it kills a unit",
-			"Withdraws before melee combat"],
+			
+			"[+80]% Strength <when defending>",
+			"[+100]% Strength <when defending> <against [Ranged] units>"
+		
+		
+		
+		],
 		
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
@@ -1130,7 +1144,7 @@
 		"unitType": "Armored",
 		"movement": 5,
 		"strength": 100,
-		"cost": 640,
+		"cost": 1280,
 		"requiredTech": "Combustion",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1156,7 +1170,7 @@
 		"strength": 10,
 		"rangedStrength": 120,
 		"range": 2,
-		"cost": 320,
+		"cost": 360,
 		"requiredTech": "Replaceable Parts",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1176,7 +1190,7 @@
 		"strength": 200,
 		"rangedStrength": 200,
 		"range": 10,
-		"cost": 600,
+		"cost": 1500,
 		"requiredTech": "Nuclear Fission",
 		"requiredResource": "Uranium",
 		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
@@ -1192,7 +1206,7 @@
 		"strength": 10,
 		"rangedStrength": 45,
 		"range": 4,
-		"cost": 600,
+		"cost": 1200,
 		"requiredTech": "Rocketry",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1205,7 +1219,8 @@
 			"[-1] Sight",
 			"Destroys tile improvements when attacking",
 		
-			"Consumes [2] [Aluminum]"],
+			"Consumes [2] [Aluminum]",
+			"Consumes [1] [Iron]"],
 		
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
@@ -1216,7 +1231,7 @@
 		"movement": 3,
 		"interceptRange": 5,
 		"strength": 50,
-		"cost": 725,
+		"cost": 1200,
 		"requiredTech": "Computers",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1240,7 +1255,7 @@
 		"strength": 60,
 		"rangedStrength": 150,
 		"range": 10,
-		"cost": 100,
+		"cost": 625,
 		"requiredTech": "Satellites",
 		"uniques": ["[-100]% maintenance costs"],
 		"attackSound": "missile"
@@ -1252,7 +1267,7 @@
 		"strength": 300,
 		"rangedStrength": 400,
 		"range": 20,
-		"cost": 1000,
+		"cost": 3000,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [2]", "Consumes [3] [Uranium]"],
@@ -1266,7 +1281,7 @@
 		"unitType": "Helicopter",
 		"movement": 8,
 		"strength": 80,
-		"cost": 760,
+		"cost": 1360,
 		"requiredTech": "Rocketry",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1293,7 +1308,7 @@
 		"strength": 30,
 		"range": 4,
 		"rangedStrength": 200,
-		"cost": 625,
+		"cost": 2400,
 		"requiredTech": "Computers",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1313,7 +1328,7 @@
 		"unitType": "Armored",
 		"movement": 3,
 		"strength": 80,
-		"cost": 650,
+		"cost": 1050,
 		"requiredTech": "Electronics",
 		"uniques": [
 			"Cannot be purchased",
@@ -1335,7 +1350,7 @@
 		"rangedStrength": 150,
 		"range": 4,
 		"interceptRange": 2,
-		"cost": 1200,
+		"cost": 2500,
 		"requiredTech": "Robotics",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1364,7 +1379,7 @@
 		"strength": 130,
 		"rangedStrength": 110,
 		"range": 2,
-		"cost": 960,
+		"cost": 1500,
 		"requiredTech": "Lasers",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1393,7 +1408,7 @@
 		"rangedStrength": 60,
 		"range": 10,
 		"interceptRange": 10,
-		"cost": 1240,
+		"cost": 2400,
 		"requiredTech": "Lasers",
 		"uniques": [
 			"Cannot be purchased",
@@ -1416,7 +1431,7 @@
 		"strength": 210,
 		"rangedStrength": 200,
 		"range": 2,
-		"cost": 1920,
+		"cost": 4000,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": [
 			"Never appears as a Barbarian unit",
@@ -1444,7 +1459,7 @@
 		"strength": 80,
 		"rangedStrength": 120,
 		"range": 20,
-		"cost": 1920,
+		"cost": 3000,
 		"requiredTech": "Stealth",
 		"uniques": [
 			"Cannot be purchased",
