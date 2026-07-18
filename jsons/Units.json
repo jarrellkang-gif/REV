@@ -1182,7 +1182,7 @@
 		"interceptRange": 10,
 		"cost": 425,
 		"requiredTech": "Lasers",
-		"uniques": ["[90]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+100]% Strength <vs [Helicopter] units",
+		"uniques": ["[90]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+100]% Strength <vs [Helicopter] units>",
 		"[+4] Sight", "Can see over obstacles", "Consumes [3] [Aluminum]", "Consumes [2] [Oil]" ]
 		"attackSound": "jetgun"
 	},
