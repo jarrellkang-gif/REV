@@ -933,6 +933,41 @@
 			"Destroys tile improvements when attacking"],
 		"attackSound": "shot"
 	},
+
+	{
+		"name": "Guerilla",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 28,
+		"cost": 0,
+		"requiredTech": "Replaceable Parts",
+		"uniqueTo": "Barbarians",
+		
+		"uniques": [
+			"Unbuildable",
+			"Cannot be purchased",
+			
+			"Destroys tile improvements when attacking",
+			"[+80]% Health from pillaging tiles",
+			"No movement cost to pillage",
+			"[5] HP when healing",
+			"Uncapturable",
+			"Withdraws before melee combat",
+			"Destroys [in all cities] cities instead of capturing",
+			"Can move after attacking",
+			"No movement cost to pillage",
+			"Heals [3] damage if it kills a unit",
+			"Unit will heal every turn, even if it performs an action",
+			"[20] XP gained from combat",
+			"[+100]% XP gained from combat",
+			"Invisible to non-adjacent units",
+			"Cannot embark",
+
+			"[+60]% Strength <when defending>"
+		],
+		"attackSound": "shot"
+	},
+	
 	{
 		"name": "Fighter",
 		"unitType": "Fighter",
