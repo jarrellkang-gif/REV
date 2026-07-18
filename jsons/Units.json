@@ -1016,9 +1016,9 @@
 		"strength": 50,
 		"cost": 375,
 		"requiredTech": "Combustion",
-
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-25]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
-		"Consumes [2] [Iron]", "Consumes [2] [Oil]", "Consumes [1] [Aluminum]"],
+		"Consumes [2] [Iron]", "Consumes [2] [Oil]", "Consumes [1] [Aluminum]", "Rough terrain penalty", "Destroys tile improvements when attacking",
+		"Unable to capture cities", "No Sight"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -1029,7 +1029,7 @@
 		"cost": 270,
 		"requiredTech": "Replaceable Parts",
 		"upgradesTo": "Helicopter Gunship",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit", "No Sight"],
 		"attackSound": "machinegun"
 	},
 	{
