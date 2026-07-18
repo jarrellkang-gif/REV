@@ -933,6 +933,7 @@
 		"uniques": [
 			"Can build [Road] improvements on tiles",
 			"Can build [Fort] improvements on tiles"
+		],
 		"attackSound": "shot"
 	},
 	{
