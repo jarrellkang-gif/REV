@@ -936,6 +936,49 @@
 		],
 		"attackSound": "shot"
 	},
+
+	{
+		"name": "Guerilla",
+		"unitType": "Gunpowder",
+		"movement": 5,
+		"strength": 30,
+		"cost": 0,
+		"requiredTech": "Replaceable Parts",
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"[+100]% Health from pillaging tiles",
+			"No movement cost to pillage",
+			"[+8] HP when healing",
+			
+			"May capture killed [Armored] units",
+			"May capture killed [Siege] units",
+			"May capture killed [Gunpowder] units",
+			
+			"Uncapturable",
+			
+			"Withdraws before melee combat <with [75]% chance>",
+			"Can move after attacking",
+			
+			"Heals [3] damage if it kills a unit>",
+			"Unit will heal every turn, even if it performs an action",
+			"[20] XP gained from combat",
+			"[+200]% XP gained from combat",
+			
+			"Invisible to non-adjacent units",
+
+			"[+100]% Strength <when defending> <vs [Gunpowder] units>",
+			"[+150]% Strength <when defending> <vs [Siege] units>",
+			"[+200]% Strength <when defending> <vs [Aircraft] units>",
+			
+			"[+50]% Strength <when attacking> <vs [Armored] units>",
+			"[-50]% Strength <when defending> <vs [Armored] units>",
+			
+			"[+100]% to Flank Attack bonuses",
+			"[+20]% Strength bonus for [Gunpowder] units within [2] tiles",
+		],
+		"attackSound": "shot"
+	},
+	
 	{
 		"name": "Fighter",
 		"unitType": "Fighter",
