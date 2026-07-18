@@ -958,7 +958,6 @@
 			"Consumes [1] [Oil]",
 			"Consumes [1] [Aluminum]"
 		],
-        // TODO: Weak Ranged Attack
 		"attackSound": "machinegun"
 	},
 	{
