@@ -878,12 +878,25 @@
 		"unitType": "Siege",
 		"movement": 2,
 		"strength": 16,
-		"rangedStrength": 32,
+		"rangedStrength": 36,
 		"range": 3,
 		"cost": 320,
 		"requiredTech": "Dynamite",
-		"uniques": ["[+20]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit", "Destroys tile improvements when attacking"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[+20]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"No Sight",
+			"Destroys tile improvements when attacking",
+
+			"Consumes [1] [Iron]",
+		
+		
+		],
+		
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -912,7 +925,10 @@
 		"strength": 36,
 		"cost": 320,
 		"requiredTech": "Replaceable Parts",
-		"uniques": ["Destroys tile improvements when attacking","Never appears as a Barbarian unit"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			
+			"Destroys tile improvements when attacking"],
 		"attackSound": "shot"
 	},
 	{
@@ -923,10 +939,19 @@
 		"rangedStrength": 40,
 		"range": 8,
 		"interceptRange": 8,
-		"cost": 475,
+		"cost": 640,
 		"requiredTech": "Flight",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+100]% Strength <vs [Helicopter] units>",
-			"Destroys tile improvements when attacking","Never appears as a Barbarian unit","Consumes [1] [Oil]"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[60]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Bomber] units>",
+			"[+100]% Strength <vs [Helicopter] units>",
+			"Destroys tile improvements when attacking",
+			"[+1] Sight",
+			
+			"Consumes [1] [Oil]"],
         // TODO: Weak Ranged Attack
 		"attackSound": "machinegun"
 	},
@@ -934,23 +959,42 @@
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
 		"movement": 2,
-		"strength": 200,
-		"cost": 875,
+		"strength": 210,
+		"cost": 1920,
 		"requiredTech": "Flight",
-		"uniques": ["Cannot attack", "Can carry [4] [Aircraft] units","Never appears as a Barbarian unit","Consumes [8] [Iron]","Consumes [2] [Aluminum]",
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"Cannot attack",
+			"Can carry [4] [Aircraft] units",
+			"Can carry [1] [Missile] units",
+			
+			"Consumes [10] [Iron]",
+			"Consumes [2] [Aluminum]",
 		"Consumes [2] [Oil]"]
 	},
 	{
 		"name": "Battleship",
 		"unitType": "Ranged Water",
 		"movement": 2,
-		"strength": 300,
-		"rangedStrength": 32,
-		"range": 3,
-		"cost": 975,
+		"strength": 220,
+		"rangedStrength": 300,
+		"range": 4,
+		"cost": 1920,
 		"requiredTech": "Telegraph",
-		"uniques": ["Never appears as a Barbarian unit","Consumes [10] [Iron]","Consumes [2] [Aluminum]","Consumes [3] [Oil]","Destroys tile improvements when attacking",
-		"Cannot capture cities"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+
+			"Destroys tile improvements when attacking",
+			"Cannot capture cities",
+			
+			"Consumes [12] [Iron]",
+			"Consumes [2] [Aluminum]",
+			"Consumes [3] [Oil]",
+			
+		],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 		// Does not actually upgrade to Missile Cruisers
@@ -960,12 +1004,23 @@
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"interceptRange": 2,
-		"strength": 32,
-		"cost": 375,
+		"strength": 40,
+		"cost": 360,
 		"requiredTech": "Radio",
-		"uniques": ["[50]% chance to intercept air attacks", "[+100]% Strength <vs [Aircraft] units>", "[+120]% Strength <vs [Helicopter] units>", 
-			"Never appears as a Barbarian unit", "[+100]% Strength <vs [Aircraft] units> <when [defending]>", "Consumes [1] [Iron]",
-			"[5] extra interceptions may be made per turn"],
+		
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[50]% chance to intercept air attacks",
+			"[+100]% Strength <vs [Aircraft] units>",
+			"[+120]% Strength <vs [Helicopter] units>", 
+			
+			"[5] extra interceptions may be made per turn",
+			"[+100]% Strength <vs [Aircraft] units> <when [defending]>",
+			
+			"Consumes [1] [Iron]"
+			],
 		"attackSound": "machinegun"
 	},
 	{
@@ -973,12 +1028,23 @@
 		"unitType": "Melee Water",
 		"movement": 6,
         "interceptRange": 2,
-        "rangedStrength": 22,
-		"strength": 150,
-		"cost": 375,
+        "rangedStrength": 40,
+		"strength": 100,
+		"cost": 800,
 		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units", "[75]% chance to intercept air attacks", "Destroys tile improvements when attacking",
-			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>","Consumes [3] [Iron]","Consumes [2] [Oil]"],
+		"uniques": [
+			"Cannot be purchased",
+			
+			"Can see invisible [Submarine] units", 
+			"[75]% chance to intercept air attacks",
+			"Destroys tile improvements when attacking",
+			"Withdraws before melee combat <with [80]% chance>",
+			
+			"[+100]% Strength <vs [Submarine] units>",
+			
+			"Consumes [3] [Iron]",
+			"Consumes [2] [Oil]"],
+		
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 	},
@@ -991,22 +1057,37 @@
 		"movement": 1,
 		"strength": 50,
 		"rangedStrength": 50,
-		"range": 10,
-		"cost": 375,
+		"range": 12,
+		"cost": 800,
 		"requiredTech": "Radar",
-        "uniques": ["[-33]% Strength <vs [Water] units>","Destroys tile improvements when attacking","Consumes [2] [Oil]"],
+        "uniques": [
+			"Cannot be purchased",
+			
+			"[-33]% Strength <vs [Water] units>",
+			"Destroys tile improvements when attacking",
+			
+			"Consumes [2] [Oil]"],
 		"attackSound": "bombing"
 	},
 	{
 		"name": "Paratrooper",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 45,
-		"cost": 575,
+		"strength": 40,
+		"cost": 740,
 		"requiredTech": "Radar",
-		"uniques": ["May Paradrop to [Land] tiles up to [50] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit",
-		"May capture killed [Gunpowder] units", "Invisible to non-adjacent units","No movement cost to pillage", "May heal outside of friendly territory",
-		"Heals [2] damage if it kills a unit"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+
+			"May Paradrop to [Land] tiles up to [50] tiles away <in [{Friendly} {Land}] tiles>",
+			"May capture killed [Gunpowder] units",
+			"Invisible to non-adjacent units",
+			"No movement cost to pillage", 
+			"May heal outside of friendly territory",
+			"Heals [2] damage if it kills a unit",
+			"Withdraws before melee combat"],
+		
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
@@ -1014,23 +1095,44 @@
 		"name": "Tank",
 		"unitType": "Armored",
 		"movement": 5,
-		"strength": 50,
-		"cost": 375,
+		"strength": 100,
+		"cost": 640,
 		"requiredTech": "Combustion",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-25]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
-		"Consumes [2] [Iron]", "Consumes [2] [Oil]", "Consumes [1] [Aluminum]", "Rough terrain penalty", "Destroys tile improvements when attacking",
-		"Unable to capture cities", "No Sight"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Rough terrain penalty",
+			"Destroys tile improvements when attacking",
+			"Unable to capture cities",
+			"No Sight",
+			
+			"Consumes [2] [Iron]",
+			"Consumes [2] [Oil]",
+			"Consumes [1] [Aluminum]"],
 		"attackSound": "tankshot"
 	},
 	{
 		"name": "Anti-Tank Gun",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 32,
-		"cost": 270,
+		"strength": 10,
+		"rangedStrength": 120,
+		"range": 2,
+		"cost": 320,
 		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Helicopter Gunship",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit", "No Sight", "Unable to capture cities", "Consumes [1] [Iron]"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[+100]% Strength <vs [Armored] units>", 
+			"No Sight",
+			"Unable to capture cities",
+			
+			"Consumes [1] [Iron]"],
 		"attackSound": "machinegun"
 	},
 	{
@@ -1053,29 +1155,48 @@
 		"name": "Rocket Artillery",
 		"unitType": "Siege",
 		"movement": 3,
-		"strength": 23,
-		"rangedStrength": 46,
+		"strength": 10,
+		"rangedStrength": 45,
 		"range": 4,
-		"cost": 425,
+		"cost": 600,
 		"requiredTech": "Rocketry",
-		"requiredResource": "Aluminum",
-		"uniques": ["[+20]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"[-1] Sight", "Never appears as a Barbarian unit", "Can move after attacking", "Destroys tile improvements when attacking"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+
+			"Can move after attacking",
+			"Destroys tile improvements when attacking",
+			"[+20]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"[-1] Sight",
+			"Destroys tile improvements when attacking",
+		
+			"Consumes [2] [Aluminum]"],
+		
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
 	{
 		"name": "Mobile SAM",
 		"unitType": "Gunpowder",
-		"movement": 4,
+		"movement": 3,
 		"interceptRange": 5,
-		"strength": 40,
-		"cost": 525,
+		"strength": 50,
+		"cost": 725,
 		"requiredTech": "Computers",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Aircraft] units>", "[-90]% Strength <vs [Gunpowder] units>",
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[90]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Aircraft] units>",
+			"[-90]% Strength <vs [Gunpowder] units>",
 			"[-100]% Strength <vs [Armored] units>",
-			"[+90]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit", "Consumes [2] [Aluminum]",
-			"[2] extra interceptions may be made per turn"],
+			"[+90]% Strength <vs [Helicopter] units>",
+			"[1] extra interceptions may be made per turn",
+	
+			"Consumes [2] [Aluminum]"
+			],
 		"attackSound": "missile"
 	},
 	{
@@ -1106,15 +1227,27 @@
 	{
 		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
 		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
+
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
-		"movement": 6,
-		"strength": 50,
-		"cost": 425,
+		"movement": 8,
+		"strength": 80,
+		"cost": 760,
 		"requiredTech": "Rocketry",
-		"requiredResource": "Aluminum",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
-			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[+100]% Strength <vs [Armored] units>",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"All tiles cost 1 movement",
+			"Ignores Zone of Control",
+			"Unable to capture cities"
+		
+			"Consumes [1] [Aluminum]",
+			"Consumes [1] [Oil]"
+		],
 		"attackSound": "machinegun"
 	},
 
@@ -1128,35 +1261,65 @@
 		"rangedStrength": 200,
 		"cost": 625,
 		"requiredTech": "Computers",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", 
-			"Never appears as a Barbarian unit", "Consumes [4] [Uranium]", "Can move after attacking"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[+75]% Strength <when attacking>",
+			"Can only attack [Water] tiles",
+			"[+1] Sight",
+			"Can carry [2] [Missile] units", 
+			"Can move after attacking",
+			
+			"Consumes [3] [Uranium]"],
 		"attackSound": "torpedo"
 	},
 	{
 		"name": "Mechanized Infantry",
 		"unitType": "Armored",
 		"movement": 3,
-		"strength": 50,
-		"cost": 375,
+		"strength": 80,
+		"cost": 650,
 		"requiredTech": "Electronics",
-		"uniques": ["Cannot be purchased","Never appears as a Barbarian unit", "Consumes [1] [Iron]", "Consumes [1] [Oil]", "Consumes [1] [Aluminum]",
-		"Rough terrain penalty", "Destroys tile improvements when attacking"],
+		"uniques": [
+			"Cannot be purchased",
+			"Never appears as a Barbarian unit",
+			
+			"Consumes [1] [Iron]",
+			"Consumes [1] [Oil]",
+			"Consumes [1] [Aluminum]",
+			
+			"Rough terrain penalty",
+			"Destroys tile improvements when attacking"],
 		"attackSound": "tankshot"
 	},
 	{
 		"name": "Missile Cruiser",
 		"unitType": "Ranged Water",
 		"movement": 7,
-		"strength": 150,
+		"strength": 100,
 		"rangedStrength": 150,
 		"range": 4,
 		"interceptRange": 2,
-		"cost": 425,
+		"cost": 1200,
 		"requiredTech": "Robotics",
-        "requiredResource": "Aluminum",
-		"uniques": ["[75]% chance to intercept air attacks", "Can see invisible [Submarine] units",
-			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit",
-			"Cannot be purchased", "Destroys tile improvements when attacking", "Can see over obstacles"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"[90]% chance to intercept air attacks",
+			"[+80]% Strength <vs [Aircraft] units>",
+			"Can see invisible [Submarine] units",
+			"Can carry [3] [Missile] units",
+			"[+100]% Strength <vs [Submarine] units>",
+			"Destroys tile improvements when attacking",
+			"Can see over obstacles",
+
+			"Consumes [3] [Aluminum]",
+			"Consumes [2] [Oil]"
+		
+		
+		],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 	},
@@ -1164,12 +1327,28 @@
 		"name": "Modern Armor",
 		"unitType": "Armored",
 		"movement": 5,
-		"strength": 80,
-		"cost": 425,
+		"strength": 130,
+		"rangedStrength": 110,
+		"range": 2,
+		"cost": 960,
 		"requiredTech": "Lasers",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-25]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
-		"Consumes [3] [Iron]", "Consumes [2] [Oil]", "Consumes [3] [Aluminum]", "Cannot be purchased", "Destroys tile improvements when attacking",
-		"Rough terrain penalty", "Unable to capture cities"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Destroys tile improvements when attacking",
+			"Rough terrain penalty",
+			"Unable to capture cities",
+			"No Sight",
+			"[1] additional attacks per turn",
+		
+			"Consumes [3] [Iron]",
+			"Consumes [2] [Oil]",
+			"Consumes [3] [Aluminum]"
+		],
 		"attackSound": "tankshot"
 	},
 	{
@@ -1180,23 +1359,48 @@
 		"rangedStrength": 60,
 		"range": 10,
 		"interceptRange": 10,
-		"cost": 425,
+		"cost": 1240,
 		"requiredTech": "Lasers",
-		"uniques": ["[90]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+100]% Strength <vs [Helicopter] units>",
-		"[+4] Sight", "Can see over obstacles", "Consumes [3] [Aluminum]", "Consumes [2] [Oil]" ]
+		"uniques": [
+			"Cannot be purchased",
+			
+			"[90]% chance to intercept air attacks",
+			"Damage taken from interception reduced by [80]%",
+			"[+150]% Strength <vs [Bomber] units>",
+			"[+100]% Strength <vs [Helicopter] units>",
+			"[+4] Sight",
+			"Can see over obstacles",
+			
+			"Consumes [3] [Aluminum]",
+			"Consumes [2] [Oil]" ]
 		"attackSound": "jetgun"
 	},
 	{
 		"name": "Giant Death Robot",
 		"unitType": "Armored",
 		"movement": 3,
-		"strength": 200,
-		"cost": 825,
+		"strength": 210,
+		"rangedStrength": 200,
+		"range": 2,
+		"cost": 1920,
 		"requiredTech": "Nuclear Fusion",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", 
-			"[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
-			"Consumes [10] [Uranium]", "Consumes [5] [Oil]", "Consumes [5] [Aluminum]","Cannot be purchased",
-			"Unable to capture cities", "Destroys tile improvements when attacking"],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			
+			"Can move after attacking",
+			"No defensive terrain bonus", 
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Unable to capture cities",
+			"Destroys tile improvements when attacking",
+			"[3] additional attacks per turn",
+			
+			"Consumes [12] [Uranium]",
+			"Consumes [5] [Oil]",
+			"Consumes [5] [Aluminum]",
+			"Consumes [5] [Iron]"
+			
+			],
 		"attackSound": "gdrAttack"
 	},
 	{
@@ -1204,16 +1408,28 @@
 		"unitType": "Bomber",
 		"movement": 2,
 		"strength": 80,
-		"rangedStrength": 80,
+		"rangedStrength": 120,
 		"range": 20,
-		"cost": 725,
+		"cost": 1920,
 		"requiredTech": "Stealth",
-		"requiredResource": "Aluminum",
-		"uniques": ["Damage taken from interception reduced by [100]%", "Cannot be carried by [Carrier] units",
-			"Can see over obstacles","[-33]% Strength <vs [Water] units>",  "Consumes [5] [Oil]", "Consumes [5] [Aluminum]",
-			"Cannot be purchased","Destroys tile improvements when attacking"],
+		"uniques": [
+			"Cannot be purchased",
+			
+			"Destroys tile improvements when attacking",
+			"Damage taken from interception reduced by [90]%",
+			"Cannot be carried by [Carrier] units",
+			"Can see over obstacles",
+			"[-33]% Strength <vs [Water] units>", 
+			
+			"Consumes [5] [Oil]",
+			"Consumes [5] [Aluminum]",
+			],
 		"attackSound": "bombing"
 	},
+
+
+
+
 
 	/* Great people */
 
