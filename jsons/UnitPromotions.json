@@ -2,7 +2,7 @@
 
 	{
 		"name": "Heal Instantly",
-		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"uniques": ["[This Unit] heals [80] HP", "Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
 		"innerColor": [195,53,43],
 		"outerColor": [253,236,234],
@@ -103,7 +103,7 @@
 	{
 		"name": "Shock III",
 		"prerequisites": ["Shock II"],
-		"uniques": ["[+15]% Strength"],
+		"uniques": ["[+1] Movement"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 3
@@ -127,7 +127,7 @@
 	{
 		"name": "Drill III",
 		"prerequisites": ["Drill II"],
-		"uniques": ["[+15]% Strength"],
+		"uniques": ["[+25]% Strength <when defending>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 5,
         "row": 3
@@ -135,7 +135,7 @@
 	{
 		"name": "Charge",
 		"prerequisites": ["Shock II","Drill II"],
-		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"uniques": ["[1] additional attacks per turn"],
 		"unitTypes": ["Mounted","Armored"],
         "column": 6,
         "row": 2
@@ -151,7 +151,10 @@
 	{
 		"name": "Formation I",
 		"prerequisites": ["Shock II","Drill II"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
-		"uniques": ["[+33]% Strength <vs [Mounted] units>", "[-50]% weight to this choice for AI decisions"],
+		"uniques": ["[+33]% Strength <vs [Mounted] units>",
+					"[+33]% Strength <vs [Armored] units>",
+					"[+33]% Strength <vs [Armored] units> <when defending>",
+					"[-50]% weight to this choice for AI decisions"],
 		"unitTypes": ["Sword","Gunpowder","Mounted"],
         "column": 7,
         "row": 2
@@ -160,6 +163,8 @@
 		"name": "Formation II",
 		"prerequisites": ["Formation I"],
 		"uniques": ["[+33]% Strength <vs [Mounted] units>"],
+					"[+33]% Strength <vs [Armored] units>",
+					"[+33]% Strength <vs [Armored] units> <when defending>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted"],
         "column": 7,
         "row": 3
@@ -192,7 +197,8 @@
 	{
 		"name": "Medic",
 		"prerequisites": ["Shock I", "Drill I", "Scouting II", "Survivalism II"],
-		"uniques": ["All adjacent units heal [+5] HP when healing", "Unit will heal every turn, even if it performs an action",
+		"uniques": ["All adjacent units heal [+5] HP when healing",
+					"Unit will heal every turn, even if it performs an action",
 			"[-50]% weight to this choice for AI decisions"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
@@ -201,7 +207,8 @@
 	{
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
-		"uniques": ["All adjacent units heal [+5] HP when healing", "All healing effects doubled"],
+		"uniques": ["All adjacent units heal [+5] HP when healing",
+					"All healing effects doubled"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10,
         "row": 2
@@ -233,7 +240,8 @@
 	},
 	{
 		"name": "Survivalism I",
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>",
+					"[+25]% Strength <when defending>"],
 		"unitTypes": ["Scout"],
         "column": 9,
         "row": 1
@@ -241,7 +249,8 @@
 	{
 		"name": "Survivalism II",
 		"prerequisites": ["Survivalism I"],
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>",
+					"[+25]% Strength <when defending>"],
 		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 9,
         "row": 2
@@ -249,7 +258,7 @@
 	{
 		"name": "Survivalism III",
 		"prerequisites": ["Survivalism II"],
-		"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
+		"uniques": ["Withdraws before melee combat <with [50]% chance>", "[+5] HP when healing <in [Foreign Land] tiles>"], // This number is not based on any source
 		"unitTypes": ["Scout","Sword","Gunpowder"],
         "column": 9,
         "row": 3
