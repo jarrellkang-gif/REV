@@ -927,7 +927,9 @@
 		"requiredTech": "Replaceable Parts",
 		"uniques": [
 			"Never appears as a Barbarian unit",
-			
+
+			"Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
 			"Destroys tile improvements when attacking"],
 		"attackSound": "shot"
 	},
