@@ -1170,42 +1170,7 @@
 		"name": "Barbarians",
 		"outerColor": [0,0,0],
 		"innerColor": [185,12,12],
-		"uniques": ["Excluded from map editor",
-			"[-40]% Strength <for [Gunpowder] units>",
-			"[-70]% Strength <for [Armored] units>",
-			
-			"[+100]% Health from pillaging tiles",
-			"No movement cost to pillage <for [Gunpowder] units>",
-			"[+15] HP when healing <for [Gunpowder] units>",
-			"No movement cost to pillage <for [Gunpowder] units>",
-			
-			"May capture killed [Armored] units",
-			"May capture killed [Siege] units",
-			"May capture killed [Gunpowder] units",
-			
-			"Uncapturable <for [Gunpowder] units>",
-			
-			"Withdraws before melee combat <with [75]% chance> <for [Gunpowder] units>",
-			"Can move after attacking <for [Gunpowder] units>",
-			
-			"Heals [3] damage if it kills a unit <for [Gunpowder] units>",
-			"Unit will heal every turn, even if it performs an action <for [Gunpowder] units>",
-			"[20] XP gained from combat",
-			"[+200]% XP gained from combat",
-			
-			"Invisible to non-adjacent units <for [Gunpowder] units>",
-
-			"[+100]% Strength <when defending> <vs [Gunpowder] units> <for [Gunpowder] units>",
-			"[+150]% Strength <when defending> <vs [Siege] units> <for [Gunpowder] units>",
-			"[+200]% Strength <when defending> <vs [Aircraft] units> <for [Gunpowder] units>",
-			
-			"[+50]% Strength <when attacking> <vs [Armored] units> <for [Gunpowder] units>",
-			"[-50]% Strength <when defending> <vs [Armored] units> <for [Gunpowder] units>",
-			
-			"[+100]% to Flank Attack bonuses <for [Gunpowder] units>",
-			"[+20]% Strength bonus for [Gunpowder] units within [2] tiles <for [Gunpowder] units>",
-			
-			]
+		"uniques": ["Excluded from map editor"]
 	}
 
 ]
