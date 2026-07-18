@@ -8,7 +8,7 @@
         "startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
         "startingWorkerCount": 0,
         "startingMilitaryUnitCount": 1,
-        "startingMilitaryUnit": "Light Warrior",
+        "startingMilitaryUnit": "Warrior",
         "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
         "embarkDefense": 3,
@@ -22,7 +22,7 @@
         "startingSettlerCount": 1,
         "startingWorkerCount": 0,
         "startingMilitaryUnitCount": 2,
-        "startingMilitaryUnit": "Light Infantry",
+        "startingMilitaryUnit": "Spearman",
         "startingGold": 10,
         "startingCulture": 100,
         "settlerPopulation": 1,
@@ -38,14 +38,12 @@
         "startingSettlerCount": 2,
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 3,
-        "startingMilitaryUnit": "Light Infantry",
+        "startingMilitaryUnit": "Spearman",
         "startingGold": 25,
         "startingCulture": 200,
         "settlerPopulation": 1,
-        "settlerBuildings": ["Shrine","Monument"],
-        // So theoretically this is always just all the wonders at least 2 eras old. So we could just use that.
-        // But where is the modularity? The excluding of very specific wonders? That is no fun.
-        // So we just write down the entire long list (sorted by era!) every time instead.
+        "settlerBuildings": ["Monument"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus"],
         "baseUnitBuyCost": 200,
         "embarkDefense": 6,
         "startPercent": 25,
@@ -62,12 +60,13 @@
         "startingGold": 50,
         "startingCulture": 300,
         "settlerPopulation": 2,
-        "settlerBuildings": ["Shrine","Monument","Granary","Lighthouse"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus"],
         "baseUnitBuyCost": 300,
         "embarkDefense": 8,
         "startPercent": 37,
         "citySound": "cityRenaissance",
-        "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
         "iconRGB": [104, 58, 183]
     },
     {
@@ -76,65 +75,19 @@
         "startingSettlerCount": 3,
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Line Infantry",
+        "startingMilitaryUnit": "Musketman",
         "startingGold": 100,
         "startingCulture": 400,
         "settlerPopulation": 3,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Temple","Barracks","Library","Colosseum"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus",
+            "Hagia Sophia", "Chichen Itza", "Machu Picchu", "Angkor Wat", "Notre Dame"],
         "baseUnitBuyCost": 400,
         "embarkDefense": 10,
         "startPercent": 50,
         "citySound": "cityIndustrial",
         "iconRGB": [63, 81, 182],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
-    },
-    {
-        "name": "Mechanical era",
-        "researchAgreementCost": 300,
-        "startingSettlerCount": 3,
-        "startingWorkerCount": 2,
-        "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Line Infantry",
-        "startingGold": 100,
-        "startingCulture": 400,
-        "settlerPopulation": 3,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
-        "baseUnitBuyCost": 400,
-        "embarkDefense": 10,
-        "startPercent": 50,
-        "citySound": "cityIndustrial",
-        "iconRGB": [63, 81, 182],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
-    },
-    {
-        "name": "Mass era",
-        "researchAgreementCost": 300,
-        "startingSettlerCount": 3,
-        "startingWorkerCount": 2,
-        "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Rifleman",
-        "startingGold": 100,
-        "startingCulture": 400,
-        "settlerPopulation": 3,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
-        "baseUnitBuyCost": 400,
-        "embarkDefense": 10,
-        "startPercent": 50,
-        "citySound": "cityIndustrial",
-        "iconRGB": [63, 81, 182],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
     },
     {
         "name": "Modern era",
@@ -146,17 +99,16 @@
         "startingGold": 200,
         "startingCulture": 500,
         "settlerPopulation": 3,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Temple","Barracks","Library","Colosseum"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus",
+            "Hagia Sophia", "Chichen Itza", "Machu Picchu", "Angkor Wat", "Notre Dame",
+            "Sistine Chapel", "Forbidden Palace", "Himeji Castle", "Taj Mahal", "Porcelain Tower", "Kremlin"],
         "baseUnitBuyCost": 600,
         "embarkDefense": 13,
         "startPercent": 65,
         "citySound": "cityModern",
         "iconRGB": [33, 150, 243],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
     },
     {
         "name": "Atomic era",
@@ -164,21 +116,21 @@
         "startingSettlerCount": 3,
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Rifleman",
+        "startingMilitaryUnit": "Infantry",
         "startingGold": 200,
         "startingCulture": 500,
         "settlerPopulation": 4,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Temple","Barracks","Library","Colosseum"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus",
+            "Hagia Sophia", "Chichen Itza", "Machu Picchu", "Angkor Wat", "Notre Dame",
+            "Sistine Chapel", "Forbidden Palace", "Himeji Castle", "Taj Mahal", "Porcelain Tower", "Kremlin",
+            "The Louvre", "Big Ben", "Brandenburg Gate"],
         "baseUnitBuyCost": 800,
         "embarkDefense": 16,
         "startPercent": 65,
         "citySound": "cityAtomic",
         "iconRGB": [0, 150, 136],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
     },
     {
         "name": "Information era",
@@ -186,22 +138,25 @@
         "startingSettlerCount": 3,
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Rifleman",
+        "startingMilitaryUnit": "Infantry",
         "startingGold": 400,
         "startingCulture": 600,
         "settlerPopulation": 5,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum","Theatre","Bank"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Temple","Barracks","Library","Colosseum","Theatre","Bank"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus",
+            "Hagia Sophia", "Chichen Itza", "Machu Picchu", "Angkor Wat", "Notre Dame",
+            "Sistine Chapel", "Forbidden Palace", "Himeji Castle", "Taj Mahal", "Porcelain Tower", "Kremlin",
+            "The Louvre", "Big Ben", "Brandenburg Gate",
+            "Eiffel Tower", "Statue of Liberty", "Cristo Redentor"],
         "baseUnitBuyCost": 1000,
         "embarkDefense": 20,
         "startPercent": 80,
-
+        // So theoretically this is always just all the wonders at least 2 eras old. So we could just use that.
+        // But where is the modularity? The excluding of very specific wonders? That is no fun.
+        // So we just write down the entire long list (sorted by era!) instead.
         "citySound": "cityInformation",
         "iconRGB": [76, 176, 81],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
     },
     { // Technically, this Era doesn't exist in the original game.
       // But as it is _really_ usefull to have for testing, I'd like to keep it.
@@ -211,26 +166,21 @@
         "startingSettlerCount": 3,
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
-        "startingMilitaryUnit": "Rifleman",
+        "startingMilitaryUnit": "Infantry",
         "startingGold": 400,
         "startingCulture": 600,
         "settlerPopulation": 5,
-        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum","Theatre","Bank"],
+        "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Temple","Barracks","Library","Colosseum","Theatre","Bank"],
+        "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+            "The Great Lighthouse", "Hanging Gardens", "The Oracle", "Great Wall", "Colossus",
+            "Hagia Sophia", "Chichen Itza", "Machu Picchu", "Angkor Wat", "Notre Dame",
+            "Sistine Chapel", "Forbidden Palace", "Himeji Castle", "Taj Mahal", "Porcelain Tower", "Kremlin",
+            "The Louvre", "Big Ben", "Brandenburg Gate",
+            "Eiffel Tower", "Statue of Liberty", "Cristo Redentor"],
         "baseUnitBuyCost": 1000,
         "embarkDefense": 25,
         "startPercent": 80,
         "citySound": "cityFuture",
         "iconRGB": [76, 176, 81],
-        "uniques": ["May not generate great prophet equivalents naturally",
-            "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
-        ]
     }
 ]
-
-
-
-
-//NEW ERA ORDER: Ancient -> Classical -> Medieval -> Renaissance (pike and shot) -> Industrial (Napoleonic) -> Mechanical (steam and rifled breechloaders)
-// -> Mass (ww1) -> Modern (ww2) -> atomic (cold war) -> information (computers, basically now)
